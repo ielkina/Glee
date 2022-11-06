@@ -1,0 +1,143 @@
+<svg width="0" height="0" class="hidden">
+  <symbol version="1.0" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 512.000000 512.000000" id="icon-cart">
+    <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+      <path d="M232 4940 c-48 -30 -72 -75 -72 -140 0 -65 24 -110 72 -140 30 -18
+51 -20 225 -20 l192 0 6 -42 c3 -24 66 -621 140 -1326 74 -706 140 -1303 146
+-1325 19 -70 59 -138 118 -200 65 -69 118 -102 202 -128 58 -18 116 -19 1395
+-19 1325 0 1335 0 1397 21 34 11 83 34 110 51 70 44 151 140 181 211 17 40 99
+402 227 1002 222 1041 215 990 158 1104 -32 65 -75 108 -142 143 l-42 23
+-1757 3 c-1712 2 -1758 3 -1758 21 0 10 -16 166 -35 346 -38 355 -41 370 -105
+412 -32 23 -38 23 -329 23 -278 0 -298 -1 -329 -20z m4010 -2007 c-210 -980
+-201 -950 -275 -991 -30 -16 -112 -17 -1312 -17 -1172 0 -1283 1 -1310 17 -46
+25 -73 59 -85 108 -9 36 -190 1732 -190 1778 0 9 343 12 1683 12 l1683 0 -194
+-907z"></path>
+      <path d="M1448 1261 c-145 -47 -269 -174 -312 -320 -21 -71 -21 -211 0 -282
+43 -148 168 -274 315 -320 82 -26 216 -26 298 0 147 46 272 172 315 320 21 71
+21 211 0 282 -43 148 -168 274 -315 320 -81 25 -222 25 -301 0z m230 -331
+c130 -79 74 -280 -78 -280 -85 0 -150 65 -150 150 0 85 65 150 150 150 27 0
+58 -8 78 -20z"></path>
+      <path d="M3368 1261 c-74 -24 -144 -69 -200 -129 -91 -97 -128 -194 -128 -332
+0 -138 37 -235 128 -332 95 -101 206 -148 352 -148 146 0 257 47 352 148 91
+97 128 194 128 332 0 138 -37 235 -128 332 -57 61 -127 105 -203 129 -81 25
+-222 25 -301 0z m230 -331 c130 -79 74 -280 -78 -280 -85 0 -150 65 -150 150
+0 85 65 150 150 150 27 0 58 -8 78 -20z"></path>
+    </g>
+  </symbol>
+  <symbol version="1.1" xmlns="http://www.w3.org/2000/svg" desc="Created with imagetracer.js version 1.2.6" viewBox="0 0 63 63" id="icon-ellipse">
+    <path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="0.8156862745098039" d="M 3.5 2 L 5 2.5 L 1.5 5 L 3.5 2 Z "></path>
+    <path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="0.8156862745098039" d="M 56.5 2 L 58.5 5 L 56.5 2 Z "></path>
+    <path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="0.8156862745098039" d="M 10.5 3 L 11.5 5 L 10.5 3 Z "></path>
+    <path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="0.8156862745098039" d="M 49.5 3 L 48.5 5 L 49.5 3 Z "></path>
+    <path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="0.8156862745098039" d="M 12.5 6 L 13 9.5 L 12 9.5 L 12.5 6 Z "></path>
+    <path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="0.8156862745098039" d="M 47.5 6 L 48 9.5 L 47 9.5 L 47.5 6 Z "></path>
+    <path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="0.8156862745098039" d="M 35.5 11 L 33.5 14 L 35.5 11 Z "></path>
+    <path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="0.8156862745098039" d="M 25.5 12 L 26.5 14 L 25.5 12 Z "></path>
+    <path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="0.8156862745098039" d="M 5.5 14 L 8 14.5 L 5.5 15 L 5.5 14 Z "></path>
+    <path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="0.8156862745098039" d="M 52.5 14 L 55 14.5 L 52.5 15 L 52.5 14 Z "></path>
+    <path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="0.8156862745098039" d="M 5.5 25 L 8 25.5 L 5.5 26 L 5.5 25 Z "></path>
+    <path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="0.8156862745098039" d="M 52.5 25 L 55 25.5 L 52.5 26 L 52.5 25 Z "></path>
+    <path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="0.8156862745098039" d="M 26.5 26 L 25.5 28 L 26.5 26 Z "></path>
+    <path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="0.8156862745098039" d="M 33.5 26 L 35.5 29 L 33.5 26 Z "></path>
+    <path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="0.8156862745098039" d="M 12.5 30 L 13 33.5 L 12 33.5 L 12.5 30 Z "></path>
+    <path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="0.8156862745098039" d="M 47.5 30 L 48 33.5 L 47 33.5 L 47.5 30 Z "></path>
+    <path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="0.8156862745098039" d="M 1.5 35 L 3.5 38 L 1.5 35 Z "></path>
+    <path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="0.8156862745098039" d="M 11.5 35 L 10.5 37 L 11.5 35 Z "></path>
+    <path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="0.8156862745098039" d="M 48.5 35 L 49.5 37 L 48.5 35 Z "></path>
+    <path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="0.8156862745098039" d="M 58.5 35 L 56.5 38 L 58.5 35 Z "></path>
+    <path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="0.8156862745098039" d="M 2.5 50 L 1.5 52 L 2.5 50 Z "></path>
+    <path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="0.8156862745098039" d="M 10.5 50 L 11.5 52 L 10.5 50 Z "></path>
+    <path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="0.8156862745098039" d="M 57.5 50 L 58.5 52 L 57.5 50 Z "></path>
+    <path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="0.8156862745098039" d="M 12.5 53 L 13 57.5 L 12 57.5 L 12.5 53 Z "></path>
+    <path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="0.8156862745098039" d="M 47.5 54 L 48 56.5 L 47 56.5 L 47.5 54 Z "></path>
+    <path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="0.8156862745098039" d="M 24.5 58 L 26.5 61 L 24.5 58 Z "></path>
+    <path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="0.8156862745098039" d="M 35.5 58 L 33.5 61 L 35.5 58 Z "></path>
+    <path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="0.8156862745098039" d="M 58.5 59 L 57.5 61 L 58.5 59 Z "></path>
+    <path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="0.8156862745098039" d="M 4.5 61 L 8 61.5 L 4.5 62 L 4.5 61 Z "></path>
+    <path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="0.8156862745098039" d="M 28.5 61 L 32 61.5 L 28.5 62 L 28.5 61 Z "></path>
+    <path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="0.8156862745098039" d="M 52.5 61 L 56 61.5 L 52.5 62 L 52.5 61 Z "></path>
+    <path fill="rgb(0,0,0)" stroke="rgb(0,0,0)" stroke-width="1" opacity="0" d="M 0 0 L 63 0 L 63 63 L 0.5 63 L 0 59.5 L 2 60.5 L 2.5 62 L 9.5 62 Q 14.5 60.5 13 52.5 Q 11.5 47.5 3.5 49 L 1 50 L 0.5 52 L 0 36.5 L 2.5 38 L 7.5 39 L 12 36.5 L 13 28.5 Q 11.1 23.9 3.5 25 L 0 27.5 L 0.5 12 L 4.5 16 L 5.5 15 Q 11.7 15.7 13 11.5 Q 14.3 4.3 10.5 2 L 5.5 1 L 0.5 4 L 0 0 Z M 29 1 L 27 2 L 23 7 L 24 13 L 28 15 L 35 14 L 37 11 L 36 5 Q 35 0 29 1 Z M 53 1 L 48 3 Q 46 5 47 12 Q 49 16 57 15 L 61 9 L 60 5 Q 59 0 53 1 Z M 28 25 L 26 26 L 23 30 L 24 36 L 29 39 Q 35 39 37 35 L 36 28 Q 34 24 28 25 Z M 52 25 L 47 29 Q 46 35 48 37 L 56 39 L 58 39 L 61 33 L 60 29 Q 59 24 52 25 Z M 27 49 L 23 54 L 24 60 L 28 62 L 35 61 L 37 58 L 36 52 Q 34 47 27 49 Z M 51 49 L 47 53 L 47 59 L 49 62 Q 56 63 59 61 L 61 56 L 59 50 Q 57 48 51 49 Z "></path>
+    <path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="0.24313725490196078" d="M 5.5 1 L 8 1.5 L 5.5 2 L 5.5 1 Z "></path>
+    <path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="0.24313725490196078" d="M 28.5 1 L 32 1.5 L 28.5 2 L 28.5 1 Z "></path>
+    <path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="0.24313725490196078" d="M 52.5 1 L 56 1.5 L 52.5 2 L 52.5 1 Z "></path>
+    <path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="0.24313725490196078" d="M 2.5 2 L 1 4.5 L 0.5 6 L 0 4.5 L 2.5 2 Z "></path>
+    <path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="0.24313725490196078" d="M 9.5 2 L 12 3.5 L 10.5 3 L 9.5 2 Z "></path>
+    <path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="0.24313725490196078" d="M 26.5 2 L 24.5 5 L 26.5 2 Z "></path>
+    <path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="0.24313725490196078" d="M 33.5 2 L 35.5 5 L 33.5 2 Z "></path>
+    <path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="0.24313725490196078" d="M 57.5 2 L 60 5.5 L 59 5.5 L 57.5 2 Z "></path>
+    <path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="0.24313725490196078" d="M 23.5 6 Q 23.3 11.3 26 13.5 L 24 12.5 L 23.5 6 Z "></path>
+    <path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="0.24313725490196078" d="M 36.5 6 L 37 10.5 L 36 10.5 L 36.5 6 Z "></path>
+    <path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="0.24313725490196078" d="M 12.5 10 L 13 11.5 L 10 13.5 L 12.5 10 Z "></path>
+    <path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="0.24313725490196078" d="M 47.5 10 L 50 13.5 L 47 11.5 L 47.5 10 Z "></path>
+    <path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="0.24313725490196078" d="M 0.5 11 L 5 14 L 4.5 16 L 0.5 11 Z "></path>
+    <path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="0.24313725490196078" d="M 59.5 11 L 56.5 15 L 55 14.5 L 59.5 11 Z "></path>
+    <path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="0.24313725490196078" d="M 35.5 12 L 34.5 14 L 35.5 12 Z "></path>
+    <path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="0.24313725490196078" d="M 3.5 25 L 5 25.5 L 0.5 29 L 3.5 25 Z "></path>
+    <path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="0.24313725490196078" d="M 55.5 25 L 60 28.5 L 56.5 26 L 55.5 25 Z "></path>
+    <path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="0.24313725490196078" d="M 10.5 26 L 13 29.5 L 12 29.5 L 10.5 26 Z "></path>
+    <path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="0.24313725490196078" d="M 25.5 26 L 25 27.5 L 23.5 34 L 23 29.5 L 25.5 26 Z "></path>
+    <path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="0.24313725490196078" d="M 34.5 26 L 35.5 28 L 34.5 26 Z "></path>
+    <path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="0.24313725490196078" d="M 49.5 26 L 48 28.5 L 47.5 30 L 47 28.5 L 49.5 26 Z "></path>
+    <path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="0.24313725490196078" d="M 36.5 29 L 37 34.5 L 33 37.5 Q 37.3 35.8 36.5 29 Z "></path>
+    <path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="0.24313725490196078" d="M 0.5 34 L 3 37.5 L 0 35.5 L 0.5 34 Z "></path>
+    <path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="0.24313725490196078" d="M 59.5 34 L 60 35.5 L 57.5 39 L 57 37.5 L 59.5 34 Z "></path>
+    <path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="0.24313725490196078" d="M 24.5 35 L 26.5 38 L 24.5 35 Z "></path>
+    <path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="0.24313725490196078" d="M 11.5 36 L 10.5 38 L 9 37.5 L 11.5 36 Z "></path>
+    <path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="0.24313725490196078" d="M 5.5 38 L 8 38.5 L 5.5 39 L 5.5 38 Z "></path>
+    <path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="0.24313725490196078" d="M 28.5 38 L 32 38.5 L 28.5 39 L 28.5 38 Z "></path>
+    <path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="0.24313725490196078" d="M 52.5 38 L 56 38.5 L 52.5 39 L 52.5 38 Z "></path>
+    <path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="0.24313725490196078" d="M 26.5 49 L 28 49.5 L 24.5 52 L 26.5 49 Z "></path>
+    <path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="0.24313725490196078" d="M 33.5 49 L 35.5 52 L 33.5 49 Z "></path>
+    <path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="0.24313725490196078" d="M 50.5 49 L 48 52.5 L 47.5 54 L 47 52.5 L 50.5 49 Z "></path>
+    <path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="0.24313725490196078" d="M 23.5 53 L 24 57.5 L 23 57.5 L 23.5 53 Z "></path>
+    <path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="0.24313725490196078" d="M 36.5 53 L 37 57.5 L 36 57.5 L 36.5 53 Z "></path>
+    <path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="0.24313725490196078" d="M 47.5 57 L 50.5 61 L 52 61.5 L 49 62 L 47.5 57 Z "></path>
+    <path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="0.24313725490196078" d="M 12.5 58 L 9.5 62 L 8 61.5 L 12.5 58 Z "></path>
+    <path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="0.24313725490196078" d="M 24.5 59 L 25.5 61 L 24.5 59 Z "></path>
+    <path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="0.24313725490196078" d="M 35.5 59 L 34.5 61 L 35.5 59 Z "></path>
+    <path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="0.24313725490196078" d="M 2.5 60 L 3.5 62 Q 0.7 62.7 2.5 60 Z "></path>
+    <path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="1" d="M 5.5 2 Q 10.3 2.3 12 5.5 Q 12.6 10.9 11 13 L 4.5 14 L 1 11.5 L 0 7.5 L 3.5 3 L 5.5 2 Z "></path>
+    <path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="1" d="M 28.5 2 Q 33.6 1.4 35 4.5 L 36 10.5 Q 34.8 15.2 27.5 14 Q 23 13 24 6.5 L 26.5 3 L 28.5 2 Z "></path>
+    <path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="1" d="M 52.5 2 Q 58.3 1.3 59 5.5 L 60 9.5 L 57.5 13 L 51.5 14 L 49 13 Q 47.4 10.9 48 5.5 L 52.5 2 Z "></path>
+    <path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="1" d="M 4.5 26 L 11 27 Q 12.6 29.1 12 34.5 Q 10.7 38.7 4.5 38 L 0 31.5 L 2.5 27 L 4.5 26 Z "></path>
+    <path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="1" d="M 27.5 26 Q 34.8 24.8 36 29.5 Q 36.8 35.3 33.5 37 L 28.5 38 L 25 35.5 L 24 29.5 L 27.5 26 Z "></path>
+    <path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="1" d="M 51.5 26 Q 57.8 24.8 59 28.5 L 60 32.5 L 55.5 38 Q 49.3 38.7 48 34.5 Q 47.4 29.1 49 27 L 51.5 26 Z "></path>
+    <path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="1" d="M 5.5 49 Q 10.3 49.3 12 52.5 Q 13.5 59.5 9.5 61 Q 2.5 62.5 1 58.5 L 0 54.5 L 3.5 50 L 5.5 49 Z "></path>
+    <path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="1" d="M 29.5 49 L 35 51.5 L 36 57.5 Q 34.8 62.2 27.5 61 Q 23 60 24 53.5 L 25 51 L 29.5 49 Z "></path>
+    <path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="1" d="M 53.5 49 L 59 52.5 L 60 56.5 L 56.5 61 Q 49.5 62.5 48 58.5 Q 46.5 51.5 50.5 50 L 53.5 49 Z "></path>
+  </symbol>
+  <symbol version="1.0" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 512.000000 512.000000" id="icon-heart">
+    <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+      <path d="M1385 4350 c-382 -60 -697 -287 -870 -626 -155 -304 -179 -682 -64
+-1011 192 -548 779 -1170 1669 -1769 238 -160 285 -179 440 -179 146 0 203 22
+392 147 912 604 1521 1243 1717 1801 92 263 96 563 10 832 -160 505 -639 840
+-1159 812 -224 -12 -410 -75 -605 -205 -96 -63 -253 -208 -323 -297 l-32 -40
+-32 40 c-65 83 -229 235 -317 293 -143 96 -278 154 -435 188 -86 19 -308 26
+-391 14z m308 -255 c173 -30 349 -115 488 -236 71 -61 170 -178 232 -274 58
+-90 86 -116 134 -121 57 -7 91 20 174 143 173 253 392 414 657 480 102 26 313
+23 418 -5 334 -89 583 -348 671 -698 13 -53 17 -111 17 -249 0 -168 -2 -186
+-28 -270 -89 -290 -269 -564 -586 -889 -270 -276 -619 -562 -1010 -826 -281
+-189 -321 -189 -615 11 -391 265 -724 537 -995 815 -344 352 -527 641 -601
+949 -26 108 -26 306 0 430 39 189 117 340 244 472 214 223 503 320 800 268z"></path>
+    </g>
+  </symbol>
+  <symbol version="1.0" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 512.000000 512.000000" id="icon-search">
+    <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+      <path d="M1720 5005 c-836 -114 -1494 -776 -1605 -1614 -19 -139 -19 -351 0
+-495 70 -536 370 -1016 825 -1320 187 -125 444 -230 681 -278 100 -20 143 -23
+354 -23 312 0 446 24 705 128 l105 42 611 -610 c654 -652 665 -662 809 -708
+58 -18 92 -22 200 -21 115 0 138 3 204 27 361 131 522 537 349 882 -17 33 -44
+78 -61 100 -17 22 -296 306 -620 631 l-589 591 46 114 c89 223 127 429 127
+683 0 356 -93 690 -274 981 -305 493 -801 817 -1360 890 -140 18 -375 18 -507
+0z m411 -206 c636 -64 1161 -464 1399 -1065 133 -334 144 -753 30 -1109 -155
+-481 -531 -869 -1010 -1043 -200 -72 -348 -97 -580 -97 -150 1 -206 5 -298 23
+-359 72 -682 253 -923 517 -403 442 -539 1066 -355 1629 186 567 663 996 1243
+1117 181 38 324 46 494 28z m2629 -3890 c80 -173 55 -342 -72 -468 -97 -97
+-235 -144 -356 -122 -140 25 -125 12 -759 644 -320 319 -580 584 -577 588 2 4
+40 33 84 63 166 117 318 270 438 440 l55 78 578 -578 c533 -534 580 -584 609
+-645z"></path>
+      <path d="M1005 4016 c-178 -186 -292 -442 -325 -725 -23 -193 -1 -251 96 -251
+84 0 114 43 114 166 0 225 111 487 293 692 39 44 47 59 47 93 0 51 -13 75 -50
+94 -63 32 -88 23 -175 -69z"></path>
+    </g>
+  </symbol>
+</svg>
