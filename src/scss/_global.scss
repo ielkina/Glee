@@ -1,34 +1,112 @@
+html,
 body {
-  font-family: 'DMSans', sans-serif;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+a,
+button,
+input {
+  outline: transparent;
+}
+
+button,
+input {
+  border: transparent;
+}
+
+body {
+  @extend %rubik-400;
   font-size: 18px;
-  font-weight: 500;
+  line-height: 1.67;
   color: $text;
   background-color: $bg;
 }
 
-.wrapper {
-  max-width: 1770px;
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .container {
-  max-width: 1170px;
-  width: 100%;
+  max-width: 1770px;
   margin: 0 auto;
 }
 
+.inner {
+  padding: 0 300px;
+}
+
+.title {
+  @extend %dms-700;
+  font-size: 36px;
+  color: $title;
+  text-align: center;
+}
+
 .logo {
+  @extend %rubik-500;
+  font-size: 36px;
+  line-height: 1.61;
+  color: $logo;
   display: flex;
   align-items: center;
-  font-family: 'Rubik', sans-serif;
-  font-size: 36px;
-  font-weight: 500;
-  line-height: 1.61;
-  text-align: left;
-  color: $logo;
+  transition: transform 0.4s, opacity 0.3s ease-in-out;
 
   &__img {
-    width: 51px;
-    height: 39px;
-    margin-right: 12px;
+    margin-right: 15px;
   }
+
+  &:hover {
+    transform: scale(1.3);
+    opacity: 0.9;
+  }
+}
+
+.btn {
+  color: $bg;
+  background-color: $btn-bg;
+  border: 2px solid transparent;
+  @extend %btn-hover;
+}
+
+.btn-light {
+  background-color: transparent;
+  border-radius: 5px;
+  border: solid 1px $btn-light-border;
+  @extend %btn-light-hover;
+}
+
+.link {
+  &::after {
+    height: 2px;
+    background-color: $text;
+  }
+
+  @extend %link-hover;
 }

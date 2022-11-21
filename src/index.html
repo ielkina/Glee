@@ -15,141 +15,158 @@
 
 <body>
   <header class="header">
-  <!-- <div class="container"> -->
+  <div class="container">
     <nav class="navbar">
-      <a class="logo" href="#">
-        <img class="logo__img" src="img/logo/logo.svg" alt="logo">
+      <a class="logo" href="index.html">
+        <img class="logo__img" src="img/logo/logo.svg" alt="logotype" style="width:51px;height: 39px;">
         Glee.
       </a>
       <ul class="menu">
         <li class="menu__item">
-          <a class="menu__link" href="#">Home +</a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="#">About</a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="#">Services</a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="#">Pages +</a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="#">News</a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="#">Contact</a>
-        </li>
-      </ul>
-      <ul class="button">
-        <li class="button__search">
-          <a class="button__search button__search-link" href="#">
-            <svg class="button__icon" style="width: 16px; height: 16px;">
-              <use xlink:href="img/sprite.svg#icon-search"></use>
-            </svg>
+          <a class="link menu__link" href="index.html">
+            Home +
           </a>
         </li>
-        <ul class="button__user">
-          <li class="button__favorite">
-            <a class="button__favorite button__favorite-link" href="#">
-              <svg class="button__icon" style="width: 19px; height: 17px;">
-                <use xlink:href="img/sprite.svg#icon-heart"></use>
-              </svg>
-              <span class="button__num">0</span>
-            </a>
-          </li>
-          <li class="button__cart">
-            <a class="button__cart button__cart-link" href="#">
-              <svg class="button__icon" style="width: 19px; height: 17px;">
-                <use xlink:href="img/sprite.svg#icon-cart"></use>
-              </svg>
-              <span class="button__num">0</span>
-            </a>
-          </li>
-        </ul>
-        <li class="button__burger">
-          <a class="button__burger button__burger-link" href="#">
-            <svg class="button__icon" style="width: 21px; height: 21px;">
-              <use xlink:href="img/sprite.svg#icon-ellipse"></use>
-            </svg>
+        <li class="menu__item">
+          <a class="link menu__link" href="about.html">
+            About
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="link menu__link" href="#">
+            Services
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="link menu__link" href="#">
+            Pages +
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="link menu__link" href="#">
+            News
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="link menu__link" href="#">
+            Contact
           </a>
         </li>
       </ul>
-    </nav>
-  <!-- </div> -->
-</header>
-
-
-<!-- <header class="header">
-  <div class="container">
-    <div class="wrapper">
-      <a class="logo" href="#">
-        <img class="logo__img" src="img/logo/logo.svg" alt="logo">
-        Glee.
-      </a>
-      <nav class="menu">
-        <ul class="menu__list">
-          <li class="menu__item">
-            <a class="menu__link" href="">Home +</a>
+      <div class="user-box">
+        <button class="user-box__search" type="button">
+          <svg class="user-box__icon" style="width: 16px; height: 16px;">
+            <use xlink:href="img/icons/sprite.svg#icon-search"></use>
+          </svg>
+        </button>
+        <ul class="user-box__list">
+          <li class="user-box__item">
+            <a class="user-box__link" href="#">
+              <svg class="user-box__icon" style="width: 19px; height: 17px;">
+                <use xlink:href="img/icons/sprite.svg#icon-heart"></use>
+              </svg>
+              <span class="user-box__num">0</span>
+            </a>
           </li>
-          <li class="menu__item">
-            <a class="menu__link" href="">About</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="">Services</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="">Pages +</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="">News</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="">Contact</a>
+          <li class="user-box__item">
+            <a class="user-box__link" href="#">
+              <svg class="user-box__icon" style="width: 19px; height: 17px;">
+                <use xlink:href="img/icons/sprite.svg#icon-cart"></use>
+              </svg>
+              <span class="user-box__num">0</span>
+            </a>
           </li>
         </ul>
-      </nav>
-      <div class="user-nav">
-        <a class="user-nav__link user-nav__link-search" href="#">
-          <svg class="user-nav__icon">
-            <use xlink:href="img/sprite.svg#icon-search"></use>
+        <button class="user-box__burger" type="button">
+          <svg class="user-box__icon-burger" style="width: 21px; height: 21px;">
+            <use xlink:href="img/icons/sprite.svg#icon-ellipse"></use>
           </svg>
-        </a>
-        <div class="user-nav__statick">
-          <a class="user-nav__link" href="#">
-            <svg class="user-nav__icon">
-              <use xlink:href="img/sprite.svg#icon-heart"></use>
-            </svg>
-            <span class="user-nav__num">0</span>
-          </a>
-          <a class="user-nav__link" href="#">
-            <svg class="user-nav__icon">
-              <use xlink:href="img/sprite.svg#icon-cart"></use>
-            </svg>
-            <span class="user-nav__num">0</span>
-          </a>
-        </div>
-        <a class="user-nav__link user-nav__link-burger" href="#">
-          <svg class="user-nav__icon">
-            <use xlink:href="img/sprite.svg#icon-ellipse"></use>
-          </svg>
-        </a>
+        </button>
       </div>
-    </div>
+    </nav>
   </div>
-</header> -->
+</header>
+  <main class="main">
+    <section class="section hero">
+  <div class="container">
+    <h1 class="sr-only">designer home furniture</h1>
+    <div class="hero-slider">
+      <ul class="inner hero-slider__inner">
+        <li class="hero-slider__item">
+          <div class="hero-slider__content">
+            <h2 class="hero-slider__title">SMART AND
+              <span class="hero-slider__title-span">TRENDY</span>
+            </h2>
+            <p class="hero-slider__text">Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+            </p>
+            <a class="btn hero-slider__link" href="#">Shop Now
+              <svg class="hero-slider__icon" style="width: 22px; height: 9px;">
+                <use xlink:href="img/icons/sprite.svg#icon-arrow"></use>
+              </svg>
+            </a>
+          </div>
+          <img class="hero-slider__img" src="img/slider/slider-1.png" alt="slider photo">
+        </li>
+        <li class="hero-slider__item">
+          <div class="hero-slider__content">
+            <h2 class="hero-slider__title">SMART AND
+              <span class="hero-slider__title-span">TRENDY</span>
+            </h2>
+            <p class="hero-slider__text">Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+            </p>
+            <a class="btn hero-slider__link" href="#">Shop Now
+              <svg class="hero-slider__icon" style="width: 22px; height: 9px;">
+                <use xlink:href="img/icons/sprite.svg#icon-arrow"></use>
+              </svg>
+            </a>
+          </div>
+          <img class="hero-slider__img" src="img/slider/slider-1.png" alt="slider photo">
+        </li>
+        <li class="hero-slider__item">
+          <div class="hero-slider__content">
+            <h2 class="hero-slider__title">SMART AND
+              <span class="hero-slider__title-span">TRENDY</span>
+            </h2>
+            <p class="hero-slider__text">Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+            </p>
+            <a class="btn hero-slider__link" href="#">Shop Now
+              <svg class="hero-slider__icon" style="width: 22px; height: 9px;">
+                <use xlink:href="img/icons/sprite.svg#icon-arrow"></use>
+              </svg>
+            </a>
+          </div>
+          <img class="hero-slider__img" src="img/slider/slider-1.png" alt="slider photo">
+        </li>
+      </ul>
+    </div>
+    <ul class="hero__info">
+      <li class="hero__item">
+        <div class="hero__content">
+          <h3 class="hero__subtitle">Support 24/7.</h3>
+          <p class="hero__text">Contact us 24 hours a day, 7 days a week.</p>
+        </div>
+      </li>
+      <li class="hero__item">
+        <div class="hero__content">
+          <h3 class="hero__subtitle">Delivery.</h3>
+          <p class="hero__text">Free shipping on all US order.</p>
+        </div>
+      </li>
+      <li class="hero__item">
+        <div class="hero__content">
+          <h3 class="hero__subtitle">100% Payment secure.</h3>
+          <p class="hero__text">We ensure secure payment with PEV.</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+    
+    
+    
+  </main>
   
-  
-  
-  
-  
-  
-  
-
-
-
-  <!-- <script src="js/mixitup.min.js"></script> -->
-<script src="js/main.min.js"></script>
+  <script src="js/main.min.js"></script>
 </body>
 
 </html>

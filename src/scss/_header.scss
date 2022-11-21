@@ -1,110 +1,157 @@
+// .header {}
+
 .navbar {
-  max-width: 1770px;
-  width: 100%;
-  height: 144px;
-  margin: 0 auto;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
 }
 
 .menu {
   display: flex;
+
   &__item {
     &:not(:last-child) {
-      margin-right: 36px;
+      margin-right: 35px;
     }
   }
 
   &__link {
-    font-family: 'Rubik', sans-serif;
+    @extend %rubik-500;
     font-size: 15px;
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 0.8;
-    letter-spacing: normal;
-    text-align: left;
-    color: $link;
+
+    &::after {
+      height: 2px;
+      background-color: $text;
+    }
   }
 }
 
-.button {
+.user-box {
   display: flex;
 
-  &__search {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-  }
-
-  &__search-link {
+  &__search,
+  &__burger {
     width: 51px;
-    height: 52px;
-    border-radius: 50%;
-    background-color: $bg-search;
-    margin-right: 21px;
-  }
-
-  &__icon {}
-
-  &__user {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 178px;
     height: 51px;
-    border-radius: 50px;
-    background-color: $bg-user;
-    margin-right: 18px;
-  }
-
-  &__favorite,
-  &__cart {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    width: 89px;
-    height: 32px;
-  }
-
-  &__favorite {
-    border-right: 1px solid $bg;
-  }
-
-  &__favorite-link {}
-
-  &__cart {}
-
-  &__cart-link {}
-
-  &__num {
-    position: absolute;
-    top: 0;
-    right: 26px;
-    width: 16px;
-    height: 16px;
-    background-color: $bg;
     border-radius: 50%;
-    font-family: 'DMSans', sans-serif;
-    font-size: 10px;
-    color: $num;
-    display: flex;
-    justify-content: center;
+    padding: 0;
+    display: inherit;
     align-items: center;
+    justify-content: center;
+    transition:
+      box-shadow 0.3s,
+      background-color 0.3s ease-in-out;
+
+    &:hover {
+      background-color: transparent;
+    }
+  }
+
+  &__search {
+    background-color: $search-bg;
+    margin-right: 21px;
+
+    &:hover {
+      box-shadow: 0px 0px 0px 2px $search-bg;
+    }
   }
 
   &__burger {
-    width: 51px;
-    height: 52px;
-    border-radius: 50%;
-    background-color: $bg-burger;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: $burger-bg;
+
+    &:hover {
+      box-shadow: 0px 0px 0px 2px $burger-bg;
+
+      & .user-box__icon-burger {
+        fill: $burger-bg;
+      }
+    }
   }
 
-  &__burger-link {}
+  &__icon,
+  &__icon-search {
+    fill: $icon;
+  }
+
+  &__icon-burger {
+    fill: $bg;
+    transition: fill 0.3s ease-in-out;
+  }
+
+  &__burger {}
+
+  &__icon-burger {}
+
+  &__icon {}
+
+  &__list {
+    display: inherit;
+    width: 178px;
+    border-radius: 50px;
+    background-color: $user-bg;
+    margin-right: 18px;
+    transition:
+      box-shadow 0.3s,
+      background-color 0.3s ease-in-out;
+
+    &:hover {
+      background-color: transparent;
+      box-shadow: 0px 0px 0px 2px $user-bg;
+
+      & .user-box__item {
+        &:nth-child(1) {
+          &::after {
+            background-color: $user-bg;
+          }
+        }
+      }
+
+      & .user-box__num {
+        background-color: $bg;
+        box-shadow: 0px 0px 0px 2px $user-bg;
+      }
+    }
+  }
+
+  &__item {
+    display: inherit;
+    align-items: center;
+    justify-content: space-around;
+    width: 89px;
+
+    &:nth-child(1) {
+      position: relative;
+
+      &::after {
+        position: absolute;
+        content: '';
+        height: 32px;
+        width: 2px;
+        background-color: $bg;
+        right: 0;
+      }
+    }
+  }
+
+  &__link {
+    position: relative;
+  }
+
+  &__num {
+    @extend %dms-400;
+    font-size: 10px;
+    line-height: 2.7;
+    color: $icon;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: $bg;
+    top: -9px;
+    right: -9px;
+  }
 }

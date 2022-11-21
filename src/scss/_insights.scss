@@ -1,0 +1,140 @@
+.insights {
+  position: relative;
+
+  // &__inner {}
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 46px;
+  }
+
+  // &__title {}
+
+  &__link {
+    display: flex;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: font-weight 0.3s ease-in-out;
+
+    &:hover {
+      font-weight: 700;
+
+      & .insights__icon {
+        width: 10px;
+        height: 16px;
+      }
+    }
+  }
+
+  &__icon {
+    width: 7px;
+    height: 12px;
+    fill: red;
+    margin-left: 10px;
+    transition: width 0.3s,
+      height 0.3s ease-in-out;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    margin-bottom: 94px;
+    // display: flex;
+    // flex-wrap: wrap;
+    // gap: 30px;
+  }
+
+  &__card {
+    max-width: 370px;
+    border-radius: 5px;
+    box-shadow: 0px 6px 47px 3px #2525250d;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff;
+  }
+
+  &__img-box {
+    position: relative;
+  }
+
+  &__img {}
+
+  &__btn {
+    position: absolute;
+    bottom: -13px;
+    left: 36px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1;
+    color: #fff;
+    border-radius: 20px;
+    padding: 10px 31px;
+    @extend %btn-hover;
+    &:hover {
+      background-color: #fff;
+    }
+  }
+
+  &__text {
+    font-family: 'DMSans', sans-serif;
+    font-weight: 500;
+    line-height: 1.2;
+    font-size: 18px;
+    color: #262626;
+  }
+
+  &__figure {
+    border-top: 1px solid blue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__data {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2.5;
+    color: #222933;
+  }
+
+  &__author {
+    font-family: 'Myriad Pro',sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2.5;
+    color: #222933;
+  }
+
+  &__brands-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 90px;
+  }
+
+  // &__brands-item {}
+
+  // &__brands-logo {}
+
+  &__bottom {
+    height: 437px;
+    background-color: #fcd7b6;
+    position: absolute;
+    z-index: -546546;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+
+
+

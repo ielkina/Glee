@@ -3,17 +3,14 @@
 @include('path/head.html',{"title":"Glee | Главная страница"})
 
 <body>
-  @include('path/header.html')
-  <!-- @include('path/hero.html') -->
-  <!-- @include('path/popular.html') -->
-  <!-- @include('path/delivery.html') -->
-  <!-- @include('path/restaurant.html') -->
-  <!-- @include('path/reviews.html') -->
-  <!-- @include('path/apps.html') -->
+  @include('path/header-home.html')
+  <main class="main">
+    @include('path/hero.html')
+    <!-- @include('path/product.html') -->
+    <!-- @include('path/design.html') -->
+    <!-- @include('path/insights.html') -->
+  </main>
   <!-- @include('path/footer.html') -->
-
-
-
   @include('path/script.html')
 </body>
 

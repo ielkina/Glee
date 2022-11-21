@@ -1,0 +1,141 @@
+.hero {
+
+  &__info {
+    background-color: #fef7f0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  &__item {
+    display: flex;
+    justify-content: center;
+
+    &:not(:last-child) {
+      border-right: 1px solid #243f4d15;
+    }
+  }
+
+  &__content {}
+
+  &__subtitle {
+    @extend %dms-700;
+    color: $subtitle;
+  }
+
+  &__text {
+    @extend %dms-400;
+    font-size: 16px;
+    line-height: 1.88;
+    color: $info-text;
+  }
+}
+
+
+.hero-slider {
+  background-image: url(../img/decor/slider-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  // background-size: cover;
+
+  &__inner {}
+
+  &__item {}
+
+  &__content {}
+
+  &__title {
+    @extend %rubik-500;
+    font-size: 72px;
+    line-height: 0.97;
+    color: $hero-title;
+    text-transform: uppercase;
+  }
+
+  &__title-span {
+    display: block;
+  }
+
+  &__text {}
+
+  &__link {}
+
+  &__icon {}
+
+  &__img {}
+}
+
+
+// .slider {
+//   &__item {
+//     min-height: 741px;
+//     display: flex !important;
+//     align-items: center;
+//   }
+
+//   // &__content {}
+
+//   &__title {
+//     margin-bottom: 21px;
+//   }
+
+//   &__text {
+//     max-width: 389px;
+//     margin-bottom: 41px;
+//   }
+
+//   &__btn {
+//     width: 200px;
+//     padding: 15px 19px;
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+//     @extend %btn-hover;
+
+//     &:hover {
+//       & .slider__icon {
+//         // fill: $bg-btn;
+//       }
+//     }
+//   }
+
+//   &__icon {
+//     width: 22px;
+//     height: 9px;
+//     fill: $bg;
+//     transition: fill 0.2s ease-in-out;
+//   }
+
+//   // &__img {}
+// }
+
+// .slick-slider {
+//   .slick-dots {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     padding-bottom: 45px;
+
+//     & li:not(:last-child) {
+//       margin-right: 11px;
+//     }
+
+//     & button {
+//       width: 30px;
+//       height: 30px;
+//       text-align: center;
+//       border-radius: 50%;
+//       font-family: 'Rubik', sans-serif;
+//       font-size: 11px;
+//       font-weight: 500;
+//       line-height: 0.77;
+//       color: #243f4d;
+//       background-color: #ffffff7e;
+//     }
+//   }
+
+//   .slick-active {
+//     & button {
+//       background-color: #fff;
+//     }
+//   }
+// }

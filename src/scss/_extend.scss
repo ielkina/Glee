@@ -1,0 +1,72 @@
+%rubik-400 {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+}
+
+%rubik-500 {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+}
+
+%dms-400 {
+  font-family: "DMSans", sans-serif;
+  font-weight: 400;
+}
+
+%dms-500 {
+  font-family: "DMSans", sans-serif;
+  font-weight: 500;
+}
+
+%dms-700 {
+  font-family: "DMSans", sans-serif;
+  font-weight: 700;
+}
+
+%myriad-400 {
+  font-family: "Myriad Pro", sans-serif;
+  font-weight: 400;
+}
+
+%link-hover {
+  position: relative;
+  transition: color 0.3s, width 0.3s ease-in-out;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    transition: width 0.3s ease-in-out;
+  }
+
+  &:hover {
+    &::after {
+      width: 100%;
+    }
+  }
+}
+
+%btn-hover {
+  transition: background-color 0.2s,
+    border-color 0.2s,
+    color 0.2s ease-in-out;
+
+  &:hover {
+    color: $btn-bg;
+    background-color: transparent;
+    border-color: $btn-bg;
+  }
+}
+
+%btn-light-hover {
+  transition:
+    border-color 0.2s,
+    color 0.2s ease-in-out;
+
+  &:hover {
+    color: $bg;
+    border-color: $bg;
+  }
+}
