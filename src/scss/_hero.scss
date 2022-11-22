@@ -1,5 +1,4 @@
 .hero {
-
   &__info {
     background-color: #fef7f0;
     display: grid;
@@ -9,13 +8,18 @@
   &__item {
     display: flex;
     justify-content: center;
+    padding: 48px 0;
 
     &:not(:last-child) {
       border-right: 1px solid #243f4d15;
     }
   }
 
-  &__content {}
+  &__content {
+    padding-left: 77px;
+    background-repeat: no-repeat;
+    background-position: top left;
+  }
 
   &__subtitle {
     @extend %dms-700;
@@ -23,6 +27,7 @@
   }
 
   &__text {
+    max-width: 213px;
     @extend %dms-400;
     font-size: 16px;
     line-height: 1.88;
@@ -30,16 +35,19 @@
   }
 }
 
-
 .hero-slider {
-  background-image: url(../img/decor/slider-bg.jpg);
-  background-position: center;
   background-repeat: no-repeat;
-  // background-size: cover;
+  background-position: center;
+  background-size: cover;
 
   &__inner {}
 
-  &__item {}
+  &__item {
+    height: 70vh;
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+  }
 
   &__content {}
 
@@ -49,93 +57,68 @@
     line-height: 0.97;
     color: $hero-title;
     text-transform: uppercase;
+    margin-bottom: 21px;
   }
 
   &__title-span {
     display: block;
   }
 
-  &__text {}
+  &__text {
+    max-width: 359px;
+    margin-bottom: 35px;
+  }
 
-  &__link {}
+  &__link {
+    display: inline-flex;
+    align-items: center;
+    @extend %rubik-500;
+    font-size: 15px;
+    line-height: 0.8;
+    padding: 21px 27px;
 
-  &__icon {}
+    &:hover {
+      & .hero-slider__icon {
+        fill: $btn-bg;
+      }
+    }
+  }
+
+  &__icon {
+    fill: $bg;
+    margin-left: 60px;
+    transition: fill 0.3s ease-in-out;
+  }
 
   &__img {}
 }
 
+.slick-slider {
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+    padding-bottom: 45px;
 
-// .slider {
-//   &__item {
-//     min-height: 741px;
-//     display: flex !important;
-//     align-items: center;
-//   }
+    & li:not(:last-child) {
+      margin-right: 11px;
+    }
 
-//   // &__content {}
+    & button {
+      width: 30px;
+      height: 30px;
+      text-align: center;
+      border-radius: 50%;
+      font-size: 11px;
+      line-height: 0.77;
+      color: $fill;
+      background-color: #ffffff7e;
+    }
+  }
 
-//   &__title {
-//     margin-bottom: 21px;
-//   }
-
-//   &__text {
-//     max-width: 389px;
-//     margin-bottom: 41px;
-//   }
-
-//   &__btn {
-//     width: 200px;
-//     padding: 15px 19px;
-//     display: flex;
-//     align-items: center;
-//     justify-content: space-between;
-//     @extend %btn-hover;
-
-//     &:hover {
-//       & .slider__icon {
-//         // fill: $bg-btn;
-//       }
-//     }
-//   }
-
-//   &__icon {
-//     width: 22px;
-//     height: 9px;
-//     fill: $bg;
-//     transition: fill 0.2s ease-in-out;
-//   }
-
-//   // &__img {}
-// }
-
-// .slick-slider {
-//   .slick-dots {
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     padding-bottom: 45px;
-
-//     & li:not(:last-child) {
-//       margin-right: 11px;
-//     }
-
-//     & button {
-//       width: 30px;
-//       height: 30px;
-//       text-align: center;
-//       border-radius: 50%;
-//       font-family: 'Rubik', sans-serif;
-//       font-size: 11px;
-//       font-weight: 500;
-//       line-height: 0.77;
-//       color: #243f4d;
-//       background-color: #ffffff7e;
-//     }
-//   }
-
-//   .slick-active {
-//     & button {
-//       background-color: #fff;
-//     }
-//   }
-// }
+  .slick-active {
+    & button {
+      background-color: $bg;
+    }
+  }
+}

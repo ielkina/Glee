@@ -1,94 +1,96 @@
-<section class="sction design">
-  <div class="inner design__inner">
-    <h2 class="design__title">New Design</h2>
-    <ul class="design-filter">
-      <li class="design-filter__item">
-        <a class="design-filter__link" href="#">All</a>
-      </li>
-      <li class="design-filter__item">
-        <a class="design-filter__link" href="#">Furnitures</a>
-      </li>
-      <li class="design-filter__item">
-        <a class="design-filter__link" href="#">Chairs</a>
-      </li>
-      <li class="design-filter__item">
-        <a class="design-filter__link" href="#">Lighting</a>
-      </li>
-      <li class="design-filter__item">
-        <a class="design-filter__link" href="#">Decor</a>
-      </li>
-    </ul>
-    <ul class="design-catalog">
-      <li class="design-catalog__item">
-        <article class="design-catalog__card">
-          <a class="design-catalog__link" href="#">
-            <h3 class="design-catalog__title">Beat Flat Pendant
-              <span class="design-catalog__title-span">Black</span>
-            </h3>
-            <span class="design-catalog__span">Classic</span>
-            <img class="design-catalog__img" src="img/design/design-1.jpg" alt="photo">
-          </a>
-        </article>
-      </li>
-      <li class="design-catalog__item">
-        <article class="design-catalog__card">
-          <a class="design-catalog__link" href="#">
-            <h3 class="design-catalog__title">Lampe Sur Pieds
-              <span class="design-catalog__title-span">Bamboo</span>
-            </h3>
-            <span class="design-catalog__span">Classic</span>
-            <img class="design-catalog__img" src="img/design/design-2.jpg" alt="photo">
-          </a>
-        </article>
-      </li>
-      <li class="design-catalog__item">
-        <article class="design-catalog__card">
-          <a class="design-catalog__link" href="#">
-            <h3 class="design-catalog__title">Rattan Rocking
-              <span class="design-catalog__title-span">Chair</span>
-            </h3>
-            <span class="design-catalog__span">Classic</span>
-            <img class="design-catalog__img" src="img/design/design-3.jpg" alt="photo">
-          </a>
-        </article>
-      </li>
-      <li class="design-catalog__item">
-        <article class="design-catalog__card">
-          <a class="design-catalog__link" href="#">
-            <h3 class="design-catalog__title">Rattan Rocking
-              <span class="design-catalog__title-span">Chair</span>
-            </h3>
-            <span class="design-catalog__span">Classic</span>
-            <img class="design-catalog__img" src="img/design/design-4.jpg" alt="photo">
-          </a>
-        </article>
-      </li>
-      <li class="design-catalog__item">
-        <article class="design-catalog__card">
-          <a class="design-catalog__link" href="#">
-            <h3 class="design-catalog__title">Rattan Rocking
-              <span class="design-catalog__title-span">Chair</span>
-            </h3>
-            <span class="design-catalog__span">Classic</span>
-            <img class="design-catalog__img" src="img/design/design-5.jpg" alt="photo">
-          </a>
-        </article>
-      </li>
-      <li class="design-catalog__item">
-        <article class="design-catalog__card">
-          <a class="design-catalog__link" href="#">
-            <h3 class="design-catalog__title">Lampe Sur Pieds
-              <span class="design-catalog__title-span">Bamboo</span>
-            </h3>
-            <span class="design-catalog__span">Classic</span>
-            <img class="design-catalog__img" src="img/design/design-6.jpg" alt="photo">
-          </a>
-        </article>
-      </li>
-    </ul>
+<section class="design">
+  <div class="container">
+    <div class="inner design__inner">
+      <h2 class="title design__title">New Design</h2>
+      <ul class="design-filter">
+        <li class="design-filter__item" data-filter-item="all">
+          <button class="btn-link design-filter__link" type="button">All</button>
+        </li>
+        <li class="design-filter__item" data-filter-item="furnitures">
+          <button class="btn-link design-filter__link" type="button">Furnitures</button>
+        </li>
+        <li class="design-filter__item" data-filter-item="chairs">
+          <button class="btn-link design-filter__link" type="button">Chairs</button>
+        </li>
+        <li class="design-filter__item" data-filter-item="lighting">
+          <button class="btn-link design-filter__link" type="button">Lighting</button>
+        </li>
+        <li class="design-filter__item" data-filter-item="decor">
+          <button class="btn-link design-filter__link" type="button">Decor</button>
+        </li>
+      </ul>
+      <ul class="design-catalog">
+        <li class="design-catalog__item furnitures" data-item="">
+          <article class="design-catalog__card">
+            <a class="design-catalog__link" href="#">
+              <h3 class="design-catalog__title">Beat Flat Pendant
+                <span class="design-catalog__title-span">Black</span>
+              </h3>
+              <span class="link design-catalog__span">Classic</span>
+              <img class="design-catalog__img" src="img/design/design-1.jpg" alt="photo">
+            </a>
+          </article>
+        </li>
+        <li class="design-catalog__item chairs" data-item="">
+          <article class="design-catalog__card">
+            <a class="design-catalog__link" href="#">
+              <h3 class="design-catalog__title">Lampe Sur Pieds
+                <span class="design-catalog__title-span">Bamboo</span>
+              </h3>
+              <span class="link design-catalog__span">Classic</span>
+              <img class="design-catalog__img" src="img/design/design-2.jpg" alt="photo">
+            </a>
+          </article>
+        </li>
+        <li class="design-catalog__item lighting" data-item="">
+          <article class="design-catalog__card">
+            <a class="design-catalog__link" href="#">
+              <h3 class="design-catalog__title">Rattan Rocking
+                <span class="design-catalog__title-span">Chair</span>
+              </h3>
+              <span class="link design-catalog__span">Classic</span>
+              <img class="design-catalog__img" src="img/design/design-3.jpg" alt="photo">
+            </a>
+          </article>
+        </li>
+        <li class="design-catalog__item decor" data-item="">
+          <article class="design-catalog__card">
+            <a class="design-catalog__link" href="#">
+              <h3 class="design-catalog__title">Rattan Rocking
+                <span class="design-catalog__title-span">Chair</span>
+              </h3>
+              <span class="link design-catalog__span">Classic</span>
+              <img class="design-catalog__img" src="img/design/design-4.jpg" alt="photo">
+            </a>
+          </article>
+        </li>
+        <li class="design-catalog__item furnitures" data-item="">
+          <article class="design-catalog__card">
+            <a class="design-catalog__link" href="#">
+              <h3 class="design-catalog__title">Rattan Rocking
+                <span class="design-catalog__title-span">Chair</span>
+              </h3>
+              <span class="link design-catalog__span">Classic</span>
+              <img class="design-catalog__img" src="img/design/design-5.jpg" alt="photo">
+            </a>
+          </article>
+        </li>
+        <li class="design-catalog__item chairs" data-item="">
+          <article class="design-catalog__card">
+            <a class="design-catalog__link" href="#">
+              <h3 class="design-catalog__title">Lampe Sur Pieds
+                <span class="design-catalog__title-span">Bamboo</span>
+              </h3>
+              <span class="link design-catalog__span">Classic</span>
+              <img class="design-catalog__img" src="img/design/design-6.jpg" alt="photo">
+            </a>
+          </article>
+        </li>
+      </ul>
+    </div>
   </div>
-  <div class="design__video">
-    <a class="design__link" href="#">
+  <div class="design__video" style="background-image: url(../img/decor/video-bg.jpg);">
+    <a class="design__link" data-fancybox href="https://youtu.be/kKXzWaOTvi8">
       <img class="design__video-play" src="img/icons/icon-video-play.svg" alt="video play">
     </a>
   </div>

@@ -3,18 +3,13 @@ body {
   height: 100%;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 .main {
   flex-grow: 1;
-}
-
-html {
-  box-sizing: border-box;
-  scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
@@ -33,6 +28,8 @@ input {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   @extend %rubik-400;
   font-size: 18px;
   line-height: 1.67;
@@ -72,7 +69,7 @@ body {
 .logo {
   @extend %rubik-500;
   font-size: 36px;
-  line-height: 1.61;
+  line-height: 1;
   color: $logo;
   display: flex;
   align-items: center;
@@ -100,6 +97,19 @@ body {
   border-radius: 5px;
   border: solid 1px $btn-light-border;
   @extend %btn-light-hover;
+}
+
+.btn-link {
+  
+  padding: 0;
+  background-color: transparent;
+  border-bottom: 1px solid transparent;
+  transition: color 0.3s, border-color 0.3s ease-in-out;
+
+  &:hover {
+    border-color: $title;
+    color: $title;
+  }
 }
 
 .link {

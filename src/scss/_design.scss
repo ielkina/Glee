@@ -1,19 +1,13 @@
 .design {
-
+  padding-top: 104px;
   // &__inner {}
+
   &__title {
-    display: block;
-    text-align: center;
-    font-family: 'DMSans', sans-serif;
-    font-size: 36px;
-    font-weight: 700;
-    color: #1a1a1a;
     margin-bottom: 29px;
   }
 
   &__video {
     height: 500px;
-    background-image: url(../img/decore/video-bg.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -33,6 +27,7 @@
   // &__video-play {}
 }
 
+
 .design-filter {
   display: flex;
   justify-content: center;
@@ -45,23 +40,13 @@
   }
 
   &__link {
-    font-family: 'DMSans', sans-serif;
+    @extend %dms-700;
     font-size: 16px;
-    font-weight: 700;
     color: #8b8b8b;
-
-    &::after {
-      height: 2px;
-      background-color: #1a1a1a;
-    }
-
-    &:hover {
-      color: #1a1a1a;
-    }
-
-    @extend %link-hover;
+    line-height: 0.8;
   }
 }
+
 
 .design-catalog {
   display: flex;
@@ -69,13 +54,7 @@
   justify-content: center;
   gap: 30px;
   margin-bottom: 120px;
-
-
-
-  // &:hover {
-  //   & .design-catalog__span {}
-  // }
-
+  width: 100%;
 
   // &__item {}
 
@@ -92,19 +71,19 @@
       & .design-catalog__span {
         &::after {
           width: 100%;
+          background-color: #a3bbc8;
         }
       }
     }
   }
 
   &__title {
+    @extend %dms-700;
+    font-size: 20px;
     top: 20px;
     left: 28px;
     position: absolute;
     z-index: 1;
-    font-family: 'DMSans', sans-serif;
-    font-size: 20px;
-    font-weight: 700;
     color: #1a1a1a;
   }
 
@@ -113,27 +92,33 @@
   }
 
   &__span {
+    @extend %dms-700;
+    font-size: 16px;
+    position: absolute;
     top: 90px;
     left: 28px;
-    position: absolute;
     z-index: 1;
-    font-family: 'DMSans', sans-serif;
-    font-weight: 700;
     line-height: 1.2;
-    font-size: 16px;
     color: #a3bbc8;
-
-    &::after {
-      height: 2px;
-      background-color: #8b8b8b;
-      content: '';
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      width: 0;
-      transition: width 0.3s ease-in-out;
-    }
   }
 
-  &__img {}
+  // &__img {}
 }
+
+// .hide {
+//   opacity: 1;
+//   animation-name: a1;
+//   animation-duration: 3s;
+//   animation-fill-mode: forwards;
+// }
+
+// @keyframes a1 {
+//   to {
+//     opacity: 0;
+//     min-height: 0;
+//     min-width: 0;
+//     padding: 0;
+//     margin: 0;
+//     bottom: 0;
+//   }
+// }

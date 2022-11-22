@@ -1,6 +1,5 @@
-// .section {}
-
 .product {
+  padding-top: 74px;
 
   &__inner {
     display: flex;
@@ -20,7 +19,7 @@
     margin-bottom: 186px;
   }
 
-  // &__item {}
+  &__item {}
 }
 
 .product-filter {
@@ -34,21 +33,14 @@
   }
 
   &__link {
-    font-family: 'DMSans', sans-serif;
+    @extend %dms-700;
     font-size: 16px;
-    font-weight: 700;
-    color: #8b8b8b;
+    color: $filter-link;
+    line-height: 1.9;
 
-    &::after {
-      height: 2px;
-      background-color: #8b8b8b;
-    }
-
-    &:hover {
-      color: #1a1a1a;
-    }
-
-    @extend %link-hover;
+    // &:focus {
+    //   color: $title;
+    // }
   }
 }
 
@@ -63,18 +55,12 @@
     display: flex;
     align-items: center;
     justify-content: end;
-    background-color: #fcd7b6;
+    background-color: $user-bg;
     position: relative;
 
     &:not(:last-child) {
       margin-right: 30px;
     }
-  }
-
-  &__content {
-    max-width: 329px;
-    margin-right: 147px;
-
   }
 
   &__img {
@@ -83,34 +69,33 @@
     bottom: 85px;
   }
 
+  &__content {
+    max-width: 329px;
+    margin-right: 147px;
+  }
+
   &__title {
-    font-family: 'DMSans' sans-serif;
-    font-weight: 700;
+    @extend %dms-700;
     font-size: 26px;
     line-height: 1.23;
-    color: #243f4d;
+    color: $hero-title;
     margin-bottom: 32px;
   }
 
   &__text {
-    font-family: 'Rubik', sans-serif;
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.88;
-    color: #243f4d;
+    color: $hero-title;
     margin-bottom: 34px;
   }
 
   &__link {
-    font-family: 'Rubik', sans-serif;
-    font-weight: 500;
+    @extend %rubik-500;
     display: inline-flex;
     align-items: center;
     padding: 22px 24px;
     font-size: 15px;
     line-height: 0.8;
-    color: #436372;
-    @extend %btn-light-hover;
 
     &:hover {
       & .product-info__icon {
@@ -123,4 +108,11 @@
     margin-left: 44px;
     transition: fill 0.2s ease-in-out;
   }
+}
+
+.mixitup-control-active {
+  // line-height: 0;
+  border-bottom: 1px solid $title;
+  transition: color 0.3s,
+    border-color 0.3s ease-in-out;
 }

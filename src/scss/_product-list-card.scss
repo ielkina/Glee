@@ -2,7 +2,7 @@
   max-width: 270px;
   border-radius: 10px;
   box-shadow: 0px 6px 47px 3px #2525250d;
-  background-color: #fff;
+  background-color: $bg;
   height: 380px;
   display: flex;
   flex-direction: column;
@@ -41,7 +41,7 @@
     width: 45px;
     height: 45px;
     border-radius: 50%;
-    background-color: #fff;
+    background-color: $bg;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -54,10 +54,10 @@
     }
 
     &:hover {
-      background-color: #a3bbc8;
+      background-color: $btn-bg;
 
       & .product-card__icon {
-        fill: #fff;
+        fill: $bg;
       }
     }
   }
@@ -68,32 +68,27 @@
   }
 
   &__title {
-    font-family: 'DMSans', sans-serif;
-    font-weight: 500;
+    @extend %dms-500;
     font-size: 16px;
     line-height: 2.5;
     color: #243f4d;
   }
 
+  &__ref {
+    &::after {
+      background-color: #243f4d;
+    }
+
+    &:hover {
+      font-weight: 700;
+    }
+  }
+
   &__price {
-    font-family: 'DMSans', sans-serif;
-    font-weight: 700;
+    @extend %dms-700;
     font-size: 16px;
     line-height: 2.5;
     color: #a3bbc8;
     margin-bottom: 38px;
-  }
-
-  &__ref {
-    &:hover {
-      font-weight: 700;
-    }
- 
-    &::after {
-      height: 3px;
-      background-color: #a3bbc8;
-    }
-
-    @extend %link-hover;
   }
 }

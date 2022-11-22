@@ -1,5 +1,6 @@
 .insights {
   position: relative;
+  padding-top: 120px;
 
   // &__inner {}
 
@@ -10,114 +11,134 @@
     margin-bottom: 46px;
   }
 
-  // &__title {}
+  &__title {
+    line-height: 1;
+  }
 
   &__link {
     display: flex;
     align-items: center;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    transition: font-weight 0.3s ease-in-out;
+    justify-content: center;
+    @extend %dms-700;
+    font-size: 16px;
+    color: #262626;
+    transition: transform 0.3s ease-in-out;
 
     &:hover {
-      font-weight: 700;
-
-      & .insights__icon {
-        width: 10px;
-        height: 16px;
-      }
+      transform: scale(1.2);
     }
   }
 
   &__icon {
-    width: 7px;
-    height: 12px;
-    fill: red;
-    margin-left: 10px;
-    transition: width 0.3s,
-      height 0.3s ease-in-out;
+    fill: $icon;
+    margin-left: 8px;
   }
 
   &__list {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 30px;
-    margin-bottom: 94px;
-    // display: flex;
-    // flex-wrap: wrap;
-    // gap: 30px;
+    // display: grid;
+    // grid-template-columns: repeat(3, 1fr);
+    // grid-gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
   }
 
   &__card {
+    position: relative;
     max-width: 370px;
     border-radius: 5px;
     box-shadow: 0px 6px 47px 3px #2525250d;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: #fff;
+    background-color: $bg;
   }
 
   &__img-box {
     position: relative;
   }
 
-  &__img {}
+  // &__img {}
 
   &__btn {
     position: absolute;
-    bottom: -13px;
-    left: 36px;
     font-family: 'Poppins', sans-serif;
+    font-weight: 700;
     font-size: 14px;
-    font-weight: bold;
+    bottom: -21px;
+    left: 36px;
     line-height: 1;
-    color: #fff;
+    color: $bg;
     border-radius: 20px;
     padding: 10px 31px;
-    @extend %btn-hover;
+
     &:hover {
-      background-color: #fff;
+      background-color: $bg;
     }
   }
 
+  &__info-box {
+    padding-top: 36px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 59px;
+  }
+
   &__text {
-    font-family: 'DMSans', sans-serif;
-    font-weight: 500;
-    line-height: 1.2;
-    font-size: 18px;
+    @extend %dms-500;
     color: #262626;
+    padding-bottom: 18px;
+    line-height: 1.6;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   &__figure {
-    border-top: 1px solid blue;
+    padding-top: 10px;
+    position: absolute;
+    bottom: 0;
+    border-top: 1px solid #e0e0e0;
+    width: 83%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 9px;
   }
 
+  &__author,
   &__data {
-    font-family: 'Rubik', sans-serif;
-    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
     font-size: 12px;
-    line-height: 2.5;
     color: #222933;
+    transition: font-weight 0.3s ease-in-out;
+
+    &:hover {
+      font-weight: 500;
+
+      & .insights__data-icon,
+      & .insights__author-icon {
+        fill: #1b2129;
+      }
+    }
   }
 
-  &__author {
-    font-family: 'Myriad Pro',sans-serif;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 2.5;
-    color: #222933;
+  &__data-icon,
+  &__author-icon {
+    fill: #222933;
+    margin-right: 10px;
+    transition: fill 0.3s ease-in-out;
   }
 
   &__brands-list {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-bottom: 90px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 50px;
+    padding: 80px 0 80px;
   }
 
   // &__brands-item {}
@@ -134,7 +155,3 @@
     right: 0;
   }
 }
-
-
-
-
