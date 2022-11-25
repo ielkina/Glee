@@ -4,17 +4,20 @@
 @import 'reset';
 // ------------------------------------
 @import 'global';
-@import 'extend';
 @import 'libs';
+@import 'extend';
 // ------------------------------------
 @import 'header';
+@import 'page';
+@import 'login';
 // ------------------------------------
-@import 'hero';
-@import 'product';
-@import 'design';
-@import 'insights';
+// @import 'hero';
+// @import 'product';
+// @import 'catalog';
+// @import 'design';
+// @import 'insights';
 // ------------------------------------
+
 @import 'footer';
 // ------------------------------------
 @import 'media';
-

@@ -1,0 +1,47 @@
+.top {
+  padding: 30px 0px;
+  background-color: $search-bg;
+
+  &__title {
+    @extend %rubik-300;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
+
+
+.breadcrumbs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__item {
+    padding: 0 9px;
+    position: relative;
+    font-size: 14px;
+    opacity: 0.6;
+
+    &::after {
+      content: '/';
+      position: absolute;
+      right: -4px;
+
+    }
+
+    &:last-child {
+      padding-right: 0;
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  &__link {
+
+    &::after {
+      height: 1px;
+      opacity: 0.6;
+    }
+  }
+}

@@ -1,0 +1,104 @@
+.catalog {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+  margin-bottom: 186px;
+
+  // &__item {}
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    padding: 17px 20px 0;
+    background-color: $bg;
+    box-shadow: 0px 6px 47px 3px #2525250d;
+    max-width: 270px;
+    height: 380px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    transition: box-shadow 0.3s ease-in-out;
+
+    &:hover {
+      box-shadow: 0px 6px 47px 3px #25252521;
+
+      & .catalog__actions {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__link {
+    flex-grow: 1;
+    display: inline-flex;
+  }
+
+  &__img {
+    margin: auto;
+    object-fit: contain;
+    overflow: hidden;
+  }
+
+  &__actions {
+    position: absolute;
+    display: flex;
+    left: 50%;
+    bottom: 38%;
+    transform: translate(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  &__action {
+    &:not(:last-child) {
+      margin-right: 17px;
+    }
+  }
+
+  &__action-link {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $bg;
+    box-shadow: 0px 6px 47px 3px #25252521;
+    transition: background-color 0.3s ease-in-out;
+
+    &:hover {
+      background-color: $btn-bg;
+
+      & .catalog__action-icon {
+        fill: $bg;
+      }
+    }
+  }
+
+  &__action-icon {
+    fill: $text-price;
+    transition: fill 0.3s ease-in-out;
+  }
+
+  &__name {
+    width: 100%;
+  }
+
+  &__ref {
+    @extend %dms-500;
+    font-size: 16px;
+    line-height: 2.5;
+
+    &::after {
+      background-color: $text;
+    }
+  }
+
+  &__price {
+    @extend %dms-700;
+    font-size: 16px;
+    line-height: 2.5;
+    color: $text-price;
+    margin-bottom: 38px;
+  }
+}

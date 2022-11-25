@@ -1,13 +1,13 @@
 .insights {
-  position: relative;
   padding-top: 120px;
+  position: relative;
 
-  // &__inner {}
+  // &__wrapper {}
 
   &__top {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     margin-bottom: 46px;
   }
 
@@ -21,7 +21,8 @@
     justify-content: center;
     @extend %dms-700;
     font-size: 16px;
-    color: #262626;
+    line-height: 1;
+    color: $text-insights;
     transition: transform 0.3s ease-in-out;
 
     &:hover {
@@ -30,14 +31,11 @@
   }
 
   &__icon {
-    fill: $icon;
+    fill: $text-insights;
     margin-left: 8px;
   }
 
   &__list {
-    // display: grid;
-    // grid-template-columns: repeat(3, 1fr);
-    // grid-gap: 30px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -45,30 +43,44 @@
   }
 
   &__card {
-    position: relative;
     max-width: 370px;
-    border-radius: 5px;
-    box-shadow: 0px 6px 47px 3px #2525250d;
+    width: 100%;
+    position: relative;
+    border-radius: 10px;
     background-color: $bg;
+    transition: box-shadow 0.3s ease-in-out;
+
+    &:hover {
+      box-shadow: 0px 6px 47px 3px #25252521;
+
+      & .insights__text {
+        text-decoration: underline;
+      }
+    }
   }
 
   &__img-box {
     position: relative;
   }
 
-  // &__img {}
+  &__img {
+    height: 250px;
+    object-fit: cover;
+    overflow: hidden;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
 
   &__btn {
     position: absolute;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
+    @extend %poppins-700;
     font-size: 14px;
-    bottom: -21px;
-    left: 36px;
-    line-height: 1;
-    color: $bg;
-    border-radius: 20px;
+    text-transform: uppercase;
+    line-height: 1.43;
     padding: 10px 31px;
+    border-radius: 20px;
+    bottom: -19px;
+    left: 30px;
 
     &:hover {
       background-color: $bg;
@@ -76,80 +88,57 @@
   }
 
   &__info-box {
-    padding-top: 36px;
-    padding-right: 30px;
-    padding-left: 30px;
-    padding-bottom: 59px;
+    padding: 36px 53px 78px 31px;
   }
 
   &__text {
-    @extend %dms-500;
-    color: #262626;
+    @extend %dms-700;
+    line-height: 1;
+    color: $text-insights;
     padding-bottom: 18px;
-    line-height: 1.6;
-    transition: all 0.3s ease-in-out;
-
-    &:hover {
-      text-decoration: underline;
-    }
   }
 
   &__figure {
-    padding-top: 10px;
-    position: absolute;
-    bottom: 0;
+    padding-top: 20px;
     border-top: 1px solid #e0e0e0;
-    width: 83%;
+    position: absolute;
+    bottom: 26px;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 9px;
+    width: 83%;
   }
 
   &__author,
   &__data {
+    font-weight: 700;
     display: flex;
     align-items: center;
     justify-content: center;
     text-transform: uppercase;
     font-size: 12px;
-    color: #222933;
+    color: $text-insights;
+    line-height: 1;
+    margin-right: 25px;
     transition: font-weight 0.3s ease-in-out;
 
-    &:hover {
-      font-weight: 500;
-
-      & .insights__data-icon,
-      & .insights__author-icon {
-        fill: #1b2129;
-      }
+    &:after {
+      height: 1px;
+      background-color: $text-insights;
     }
   }
 
+
   &__data-icon,
   &__author-icon {
-    fill: #222933;
+    fill: $text-insights;
     margin-right: 10px;
     transition: fill 0.3s ease-in-out;
   }
 
-  &__brands-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 50px;
-    padding: 80px 0 80px;
-  }
-
-  // &__brands-item {}
-
-  // &__brands-logo {}
-
   &__bottom {
-    height: 437px;
-    background-color: #fcd7b6;
+    height: 31%;
+    background-color: $container-bg;
     position: absolute;
-    z-index: -546546;
+    z-index: -5;
     bottom: 0;
     left: 0;
     right: 0;

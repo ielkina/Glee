@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+@include('path/head.html',{"title":"Glee | Terms"})
+
+<body>
+  @include('path/header.html')
+  <main class="main">
+    <section class="top">
+      <div class="container">
+        <h2 class="top__title"></h2>
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs__item">
+            <a class="link breadcrumbs__link" href="index.html">Home</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="link breadcrumbs__link" href="#"></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    @include('path/insights.html')
+  </main>
+  @include('path/footer.html')
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

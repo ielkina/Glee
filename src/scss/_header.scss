@@ -1,16 +1,18 @@
 .header {
-  // height: 144px;
+  padding: 45px 0;
 }
 
 .navbar {
-  height: 144px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 .menu {
-  display: flex;
+
+  &__list {
+    display: flex;
+  }
 
   &__item {
     &:not(:last-child) {
@@ -22,10 +24,10 @@
     @extend %rubik-500;
     font-size: 15px;
     line-height: 0.8;
+    color: $text-menu;
 
     &::after {
-      height: 2px;
-      background-color: $text;
+      background-color: $text-menu;
     }
   }
 }
@@ -38,13 +40,10 @@
     width: 51px;
     height: 51px;
     border-radius: 50%;
-    padding: 0;
-    display: inherit;
+    display: flex;
     align-items: center;
     justify-content: center;
-    transition:
-      box-shadow 0.3s,
-      background-color 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
 
     &:hover {
       background-color: transparent;
@@ -53,66 +52,45 @@
 
   &__search {
     background-color: $search-bg;
+    box-shadow: 0px 0px 0px 2px $search-bg;
     margin-right: 21px;
-
-    &:hover {
-      box-shadow: 0px 0px 0px 2px $search-bg;
-    }
   }
 
   &__burger {
     background-color: $burger-bg;
+    box-shadow: 0px 0px 0px 2px $burger-bg;
 
     &:hover {
-      box-shadow: 0px 0px 0px 2px $burger-bg;
-
-      & .user-box__icon-burger {
+      .user-box__icon-burger {
         fill: $burger-bg;
       }
     }
   }
 
-  &__icon,
-  &__icon-search {
-    fill: $icon;
-  }
+  // &__icon {}
 
   &__icon-burger {
     fill: $bg;
-    transition: fill 0.3s ease-in-out;
   }
 
-  &__burger {}
-
-  &__icon-burger {}
-
-  &__icon {}
-
   &__list {
-    display: inherit;
     width: 178px;
+    height: 51px;
     border-radius: 50px;
+    display: inline-flex;
+    align-items: center;
+    margin-right: 21px;
     background-color: $user-bg;
-    margin-right: 18px;
-    transition:
-      box-shadow 0.3s,
-      background-color 0.3s ease-in-out;
+    box-shadow: 0px 0px 0px 2px $user-bg;
+    transition: background-color 0.3s ease-in-out;
 
     &:hover {
       background-color: transparent;
-      box-shadow: 0px 0px 0px 2px $user-bg;
 
       & .user-box__item {
-        &:nth-child(1) {
-          &::after {
-            background-color: $user-bg;
-          }
+        &:not(:last-child) {
+          border-inline-end: solid 2px $user-bg;
         }
-      }
-
-      & .user-box__num {
-        background-color: $bg;
-        box-shadow: 0px 0px 0px 2px $user-bg;
       }
     }
   }
@@ -120,41 +98,35 @@
   &__item {
     display: inherit;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     width: 89px;
+    height: 32px;
 
-    &:nth-child(1) {
-      position: relative;
-
-      &::after {
-        position: absolute;
-        content: '';
-        height: 32px;
-        width: 2px;
-        background-color: $bg;
-        right: 0;
-      }
+    &:not(:last-child) {
+      border-inline-end: solid 2px $bg;
+      transition: border-inline-end 0.3s ease-in-out;
     }
   }
 
   &__link {
+    display: inline-flex;
     position: relative;
   }
 
   &__num {
-    @extend %dms-400;
-    font-size: 10px;
-    line-height: 2.7;
-    color: $icon;
-    position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: absolute;
     width: 16px;
     height: 16px;
-    border-radius: 50%;
     background-color: $bg;
-    top: -9px;
-    right: -9px;
+    border-radius: 50%;
+    right: -10px;
+    top: -10px;
+    @extend %dms-400;
+    font-size: 10px;
+    line-height: 1;
+    box-shadow: 0px 0px 0px 2px $user-bg;
   }
 }

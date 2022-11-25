@@ -1,153 +1,156 @@
 .footer {
-  padding-top: 79px;
-
-  // &__inner {}
 
   &__top {
+    padding: 90px 0;
+    background-color: $container-bg;
+  }
+
+  &__brands {
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    margin-bottom: 77px;
+  }
+
+  // &__brand {}
+
+  // &__brand-logo {}
+
+  // &__bottom {}
+
+  // &__wrapper {}
+
+  &__nav {
+    padding: 70px 0;
+    font-size: 14px;
+    line-height: 2.3;
+    color: $text-footer;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 90px;
   }
 
   &__address {
-    max-width: 241px;
+    max-width: 191px;
   }
 
   &__logo {
-    margin-bottom: 20px;
+    font-style: normal;
+    margin-bottom: 10px;
   }
 
-  &__blok {}
+  // &__address-list {}
 
-  &__title {
-    padding-top: 14px;
-    @extend %dms-700;
-    font-size: 16px;
-    line-height: 1.31;
-    color: #1f2044;
-    text-transform: uppercase;
-    margin-bottom: 20px;
+  &__address-item {
+    margin-bottom: 10px;
   }
 
-  &__list {}
+  &__address-link {
+    font-style: normal;
+  }
 
-  &__item {}
 
+  &__address-link,
   &__link {
-    font-size: 14px;
-    line-height: 2.29;
-    color: #7b7b7b;
-
     &::after {
       height: 1px;
-      background-color: #7b7b7b;
+      background-color: $text-footer;
     }
   }
 
-  &__blok-form {
-    max-width: 240px;
+  &__address-span {
+    text-transform: uppercase;
   }
 
-  &__text {
-    font-size: 14px;
-    line-height: 1.7;
-    color: #7b7b7b;
+
+
+  &__list {
+    padding-top: 20px;
+  }
+
+  // &__item {}
+
+  &__title {
+    @extend %dms-700;
+    font-size: 16px;
+    line-height: 1;
+    color: $title-footer;
+    text-transform: uppercase;
+    margin-bottom: 27px;
+  }
+
+  // &__link {}
+
+  &__blok-form {
+    padding-top: 20px;
+  }
+
+  &__blok-text {
     margin-bottom: 38px;
+    max-width: 234px;
   }
 
   &__form {
+    max-width: 270px;
     display: flex;
   }
 
-  &__form-inner {}
+  // &__form-inner {}
 
-  &__form-label {}
+  // &__form-label {}
 
   &__form-input {
+    background-color: $container-bg;
+    box-shadow: 0px 0px 0px 1px $container-bg;
     @extend %dms-400;
-    line-height: 0;
     font-size: 12px;
-    padding: 13px 16px;
-    background-color: $search-bg;
-    color: #234969;
-    transition: box-shadow 0.3s ease-in-out;
+    line-height: 1;
+    padding: 14px 14px;
+    color: $text-input;
+    transition: background-color 0.3s, box-shadow 0.3s ease-in-out;
+    &::placeholder{
+      color: $text-input;
+    }
 
-    &:hover {
-      box-shadow: 0px 0px 0px 2px $btn-bg inset;
-
+    &:focus {
+      box-shadow: 0px 0px 0px 1px $btn-bg;
     }
   }
 
   &__form-btn {
-    @extend %dms-400;
-    font-size: 14px;
     line-height: 1;
-    padding: 10px 16px;
+    padding: 14px 14px;
   }
-}
-
-.address {
-
-  &__list {}
-
-  &__item {
-    &:not(:last-child) {
-      margin-bottom: 5px;
-    }
-  }
-  &__link {
-    font-style: normal;
-    font-size: 14px;
-    line-height: 1;
-    color: #7b7b7b;
-
-    &::after {
-      height: 1px;
-      background-color: #7b7b7b;
-    }
-  }
-
-  &__span {
-    text-transform: uppercase;
-  }
-}
-
-.footer-bottom {
-  height: 90px;
-  border-top: 1px solid #a3bbc869;;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 
   &__copy {
+    border-top: 1px solid $btn-bg;
+    padding: 37px 0;
     font-size: 14px;
-    color: #7b7b7b;
+    line-height: 2.29;
+    color: $text-footer;
+    display: flex;
+    justify-content: space-between;
   }
 
-  &__list {
-    height: 17px;
+  // &__copy-text {}
+
+  &__menu {
     display: flex;
     align-items: center;
+    line-height: 1;
   }
 
-  &__item {
-    line-height: 0.8;
-    padding: 0 16px;
+  &__menu-item {
+    padding: 0 9px;
 
     &:not(:last-child) {
-      border-right: 1px solid;
+      border-inline-end: solid 1px $text-footer;
     }
   }
 
-  &__link {
-    font-style: normal;
-    font-size: 14px;
-    line-height: 1;
-    color: #7b7b7b;
-
+  &__menu-link {
     &::after {
       height: 1px;
-      background-color: #7b7b7b;
+      background-color: $text-footer;
     }
   }
 }

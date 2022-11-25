@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-@include('path/head.html',{"title":"Glee | Главная страница"})
+@include('path/head.html',{"title":"Glee | Home"})
 
 <body>
-  @include('path/header-home.html')
+  @include('path/header.html')
   <main class="main">
     @include('path/hero.html')
     @include('path/product.html')
@@ -11,7 +11,6 @@
     @include('path/insights.html')
   </main>
   @include('path/footer.html')
-  @include('path/script.html')
+  <script src="js/main.min.js"></script>
 </body>
-
 </html>

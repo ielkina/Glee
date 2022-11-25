@@ -1,9 +1,97 @@
 .design {
   padding-top: 104px;
-  // &__inner {}
+
+  // &__top {}
 
   &__title {
+    line-height: 1;
     margin-bottom: 29px;
+  }
+
+  &__filter {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 79px;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+
+  &__btn {
+    background-color: transparent;
+    @extend %dms-700;
+    font-size: 16px;
+    line-height: 1.2;
+    color: $text-filter;
+    transition: color 0.2s ease-in-out;
+
+    &::after {
+      background-color: $text-filter-hover;
+    }
+
+    &:hover {
+      color: $text-filter-hover;
+    }
+  }
+
+  &__catalog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 120px;
+  }
+
+  &__card {
+    position: relative;
+    min-width: 370px;
+    height: 246px;
+  }
+
+  &__link {
+    display: inline-block;
+    transition: box-shadow 0.3s ease-in-out;
+
+    &:hover {
+      box-shadow: 0px 6px 47px 3px #25252521;
+
+      & .design__span {
+        &::after {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  &__img {
+    object-fit: cover;
+  }
+
+  &__subtitle {
+    max-width: 200px;
+    position: absolute;
+    @extend %dms-700;
+    font-size: 20px;
+    line-height: 1.3;
+    top: 33px;
+    left: 36px;
+  }
+
+  &__span {
+    position: absolute;
+    line-height: 1.3;
+    top: 95px;
+    left: 36px;
+    @extend %dms-700;
+    color: $text-price;
+    font-size: 16px;
+
+    &::after {
+      background-color: $text-price;
+    }
   }
 
   &__video {
@@ -16,109 +104,66 @@
     justify-content: center;
   }
 
-  &__link {
+  &__play {
     transition: transform 0.3s ease-in-out;
 
     &:hover {
       transform: scale(1.3);
     }
   }
-
-  // &__video-play {}
 }
 
+//   &__filter {
+//     display: flex;
 
-.design-filter {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 79px;
-
-  &__item {
-    &:not(:last-child) {
-      margin-right: 35px;
-    }
-  }
-
-  &__link {
-    @extend %dms-700;
-    font-size: 16px;
-    color: #8b8b8b;
-    line-height: 0.8;
-  }
-}
-
-
-.design-catalog {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
-  margin-bottom: 120px;
-  width: 100%;
-
-  // &__item {}
-
-  &__card {
-    min-width: 370px;
-    height: 246px;
-    position: relative;
-  }
-
-  &__link {
-    display: inline-block;
-
-    &:hover {
-      & .design-catalog__span {
-        &::after {
-          width: 100%;
-          background-color: #a3bbc8;
-        }
-      }
-    }
-  }
-
-  &__title {
-    @extend %dms-700;
-    font-size: 20px;
-    top: 20px;
-    left: 28px;
-    position: absolute;
-    z-index: 1;
-    color: #1a1a1a;
-  }
-
-  &__title-span {
-    display: block;
-  }
-
-  &__span {
-    @extend %dms-700;
-    font-size: 16px;
-    position: absolute;
-    top: 90px;
-    left: 28px;
-    z-index: 1;
-    line-height: 1.2;
-    color: #a3bbc8;
-  }
-
-  // &__img {}
-}
-
-// .hide {
-//   opacity: 1;
-//   animation-name: a1;
-//   animation-duration: 3s;
-//   animation-fill-mode: forwards;
-// }
-
-// @keyframes a1 {
-//   to {
-//     opacity: 0;
-//     min-height: 0;
-//     min-width: 0;
-//     padding: 0;
-//     margin: 0;
-//     bottom: 0;
 //   }
-// }
+
+//   &__item {
+
+//   }
+
+//   &__btn {
+
+//   }
+
+//   &__catalog {
+
+//     margin-bottom: 120px;
+//   }
+
+//   &__card {
+//     max-width: 370px;
+//     height: 246px;
+//     position: relative;
+//   }
+
+//   &__link {
+//     display: inline-block;
+//   }
+
+//   &__subtitle {
+//     @extend %dms-700;
+//     font-size: 20px;
+//     top: 20px;
+//     left: 28px;
+//     position: absolute;
+//     color: #1a1a1a;
+//   }
+
+//   &__subtitle-span {
+//     display: block;
+//   }
+
+//   &__span {
+//     @extend %dms-700;
+//     font-size: 16px;
+//     position: absolute;
+//     top: 90px;
+//     left: 28px;
+//     color: #a3bbc8;
+//   }
+
+//   &__img {
+//     overflow: hidden;
+//     object-fit: cover;
+//   }

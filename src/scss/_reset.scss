@@ -1,34 +1,19 @@
-// 1. Используйте более интуитивную модель размера коробки.
+* {
+  margin: 0;
+  padding: 0;
+}
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
-// 2. Удалить поле по умолчанию
-* {
-  margin: 0;
-}
-
-// 3. Разрешить высоту в процентах в приложении
 html,
 body {
   height: 100%;
 }
 
-// Типографские исправления ! 
-// 4. Добавьте доступную высоту строки 
-// 5. Улучшить рендеринг текста
-body {
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
-}
-
-* {
-  line-height: calc(1em + 0.5rem);
-}
-
-// 6. Улучшите настройки мультимедиа по умолчанию
 img,
 picture,
 video,
@@ -38,15 +23,14 @@ svg {
   max-width: 100%;
 }
 
-// 7. Удалите встроенные стили оформления формы
 input,
 button,
 textarea,
 select {
   font: inherit;
+  color: inherit;
 }
 
-// 8. Избегайте переполнения текста
 p,
 h1,
 h2,
@@ -55,23 +39,6 @@ h4,
 h5,
 h6 {
   overflow-wrap: break-word;
-}
-
-p {
-  overflow-wrap: break-word;
-  // добавление дефиса для переноса слов
-  hyphens: auto;
-}
-
-// 9. Создайте корневой контекст стека
-#root,
-#__next {
-  isolation: isolate;
-}
-*,
-*::after,
-*::before {
-  box-sizing: inherit;
 }
 
 ul,
@@ -106,26 +73,18 @@ textarea {
   resize: none;
 }
 
-input,
-button,
-textarea,
-select {
-  font: inherit;
-  color: inherit;
-}
-
 a {
   text-decoration: none;
   color: inherit;
   font: inherit;
 }
 
-img {
-  max-width: 100%;
-  display: block;
-}
-
 a,
 button {
   cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  display: block;
 }

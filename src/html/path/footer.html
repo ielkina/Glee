@@ -1,36 +1,57 @@
 <footer class="footer">
-  <div class="container">
-    <div class="inner footer__inner">
-      <div class="footer__top">
-        <div class="footer__address">
-          <a class="logo footer__logo" href="index.html">
-            <img class="logo__img" src="img/logo/logo.svg" alt="logo">Glee.
-          </a>
-          <address class="address">
-            <ul class="address__list">
-              <li class="address__item">
-                <a class="link address__link" target="_blank" href="https://goo.gl/maps/HKKCY3L8o5sCeHWx5">
-                  <span class="address__span">address</span>: 4772 Wines Lane Houston, TX 77032
+  <div class="footer__top">
+    <div class="container">
+      <ul class="wrapper footer__brands">
+        <li class="footer__brand">
+          <img class="footer__brand-logo" src="img/content/brands/brand-1.png" alt="brand logo">
+        </li>
+        <li class="footer__brand">
+          <img class="footer__brand-logo" src="img/content/brands/brand-2.png" alt="brand logo">
+        </li>
+        <li class="footer__brand">
+          <img class="footer__brand-logo" src="img/content/brands/brand-3.png" alt="brand logo">
+        </li>
+        <li class="footer__brand">
+          <img class="footer__brand-logo" src="img/content/brands/brand-4.png" alt="brand logo">
+        </li>
+        <li class="footer__brand">
+          <img class="footer__brand-logo" src="img/content/brands/brand-5.png" alt="brand logo">
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <div class="container">
+      <div class="wrapper footer__wrapper">
+        <div class="footer__nav">
+          <address class="footer__address">
+            <a class="logo footer__logo" href="index.html">
+              <img class="logo__img" src="img/logo/logo.svg" alt="logo">Glee.
+            </a>
+            <ul class="footer__address-list">
+              <li class="footer__address-item">
+                <a class="link footer__address-link" target="_blank" href="https://goo.gl/maps/HKKCY3L8o5sCeHWx5">
+                  <span class="footer__address-span">address</span>: 4772 Wines Lane Houston, TX 77032
                 </a>
               </li>
-              <li class="address__item">
-                <a class="link address__link" href="tel:+832-347-5843">
-                  <span class="address__span">Telephone</span>: +832-347-5843
+              <li class="footer__address-item">
+                <a class="link footer__address-link" href="tel:+832-347-5843">
+                  <span class="footer__address-span">Telephone</span>: +832-347-5843
                 </a>
               </li>
-              <li class="address__item">
-                <a class="link address__link" href="mailto:contact@glee.com">
-                  <span class="address__span">Email</span>: contact@Glee.com
+              <li class="footer__address-item">
+                <a class="link footer__address-link" href="mailto:contact@glee.com">
+                  <span class="footer__address-span">Email</span>: contact@Glee.com
                 </a>
               </li>
             </ul>
           </address>
-        </div>
-        <div class="footer__blok">
-          <h3 class="footer__title">Services</h3>
           <ul class="footer__list">
             <li class="footer__item">
-              <a class="link footer__link" href="#">About us</a>
+              <h3 class="footer__title">Services</h3>
+            </li>
+            <li class="footer__item">
+              <a class="link footer__link" href="about.html">About us</a>
             </li>
             <li class="footer__item">
               <a class="link footer__link" href="#">Return Policy</a>
@@ -42,13 +63,13 @@
               <a class="link footer__link" href="#">Contact Us</a>
             </li>
             <li class="footer__item">
-              <a class="link footer__link" href="#">Terms & Condition</a>
+              <a class="link footer__link" href="terms.html">Terms & Condition</a>
             </li>
           </ul>
-        </div>
-        <div class="footer__blok">
-          <h3 class="footer__title">Account</h3>
           <ul class="footer__list">
+            <li class="footer__item">
+              <h3 class="footer__title">Account</h3>
+            </li>
             <li class="footer__item">
               <a class="link footer__link" href="#">Your Account</a>
             </li>
@@ -56,54 +77,45 @@
               <a class="link footer__link" href="#">Checkout</a>
             </li>
             <li class="footer__item">
-              <a class="link footer__link" href="#">Login</a>
+              <a class="link footer__link" href="login.html">Login</a>
             </li>
             <li class="footer__item">
               <a class="link footer__link" href="#">Register</a>
             </li>
           </ul>
+          <div class="footer__blok-form">
+            <h3 class="footer__title">newsletter</h3>
+            <p class="footer__blok-text">
+              Subscribe by our newsletter and get
+              update protidin.
+            </p>
+            <form class="footer__form" action="#">
+              <div class="footer__form-inner">
+                <label class="sr-only footer__form-label" for="email">enter yor email
+                </label>
+                <input class="footer__form-input" type="email" placeholder="Email address" required>
+              </div>
+              <button class="btn-bg footer__form-btn" type="button">Subscribe</button>
+            </form>
+          </div>
         </div>
-        <div class="footer__blok-form">
-          <h3 class="footer__title">newsletter</h3>
-          <p class="footer__text">
-            Subscribe by our newsletter and get update protidin.
-          </p>
-          <form class="footer__form" action="#">
-            <div class="footer__form-inner">
-              <label id="email" class="sr-only footer__form-label" for="email">enter yor email
-              </label>
-                <input id="email" class="footer__form-input" type="email" placeholder="Email address">
-            </div>
-            <button class="btn footer__form-btn" type="button">Subscribe</button>
-          </form>
+        <div class="footer__copy">
+          <p class="footer__copy-text">©2020 CopyRight Example. All rights reserved.</p>
+          <ul class="footer__menu">
+            <li class="footer__menu-item">
+              <a class="link footer__menu-link" href="index.html">Home</a>
+            </li>
+            <li class="footer__menu-item">
+              <a class="link footer__menu-link" href="about.html">About</a>
+            </li>
+            <li class="footer__menu-item">
+              <a class="link footer__menu-link" href="blog.html">Blog</a>
+            </li>
+            <li class="footer__menu-item">
+              <a class="link footer__menu-link" href="#">Contact</a>
+            </li>
+          </ul>
         </div>
-      </div>
-      <div class="footer-bottom">
-        <p class="footer-bottom__copy">
-          ©2020 CopyRight Example. All rights reserved.
-        </p>
-        <ul class="footer-bottom__list">
-          <li class="footer-bottom__item">
-            <a class="link footer-bottom__link" href="index.html">
-              Home
-            </a>
-          </li>
-          <li class="footer-bottom__item">
-            <a class="link footer-bottom__link" href="#">
-              About
-            </a>
-          </li>
-          <li class="footer-bottom__item">
-            <a class="link footer-bottom__link" href="#">
-              Blog
-            </a>
-          </li>
-          <li class="footer-bottom__item">
-            <a class="link footer-bottom__link" href="#">
-              Contact
-            </a>
-          </li>
-        </ul>
       </div>
     </div>
   </div>

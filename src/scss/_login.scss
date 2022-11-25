@@ -1,0 +1,80 @@
+.modal {
+
+  &__wrapper {
+    padding: 120px 0;
+    text-align: center;
+  }
+
+  &__form {
+    margin: 0 auto;
+    max-width: 470px;
+    display: flex;
+    flex-direction: column;
+    // text-align: left;
+  }
+
+  &__label {
+    display: block;
+    text-align: left;
+    font-size: 14px;
+    color: $text-logo;
+    margin-bottom: 15px;
+    cursor: pointer;
+  }
+
+  &__input {
+    display: block;
+    width: 100%;
+    color: $text-input;
+    border: solid 2px #f6f6f6;
+    padding: 15px 10px;
+    margin-bottom: 28px;
+
+    &:focus {
+      border: solid 2px $btn-bg;
+    }
+  }
+
+  &__btn {
+    font-weight: 500;
+    padding: 15px 0;
+    margin-bottom: 35px;
+  }
+
+  &__check {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #f6f6f6;
+    margin-bottom: 33px;
+  }
+
+  &__link-pas {
+    font-size: 14px;
+    color: $text-logo;
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  &__text {
+    font-size: 14px;
+    color: $text-logo;
+    margin-bottom: 24px;
+  }
+
+  &__ref {
+    width: 470px;
+    @extend %rubik-500;
+    display: inline-block;
+    padding: 13px 0;
+    box-shadow: 0px 0px 0px 1px #243f4d52;
+
+    &:hover {
+      color: $text;
+      box-shadow: 0px 0px 5px 1px #243f4d52;
+    }
+  }
+}

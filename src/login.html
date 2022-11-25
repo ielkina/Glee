@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="img/favicon/site.webmanifest">
+  <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Glee | Login</title>
+</head>
+
+
+<body>
+  <header class="header">
+  <div class="container">
+    <nav class="navbar">
+      <a class="logo" href="index.html">
+        <img class="logo__img" src="img/logo/logo.svg" alt="logotype">
+        Glee.
+      </a>
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a class="link menu__link" href="index.html">
+            Home +
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="link menu__link" href="about.html">
+            About
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="link menu__link" href="#">
+            Services
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="link menu__link" href="#">
+            Pages +
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="link menu__link" href="#">
+            News
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="link menu__link" href="#">
+            Contact
+          </a>
+        </li>
+      </ul>
+      <div class="user-box">
+        <button class="user-box__search" type="button">
+          <svg class="user-box__icon" style="width: 16px; height: 16px;">
+            <use xlink:href="img/icons/sprite.svg#icon-search"></use>
+          </svg>
+        </button>
+        <ul class="user-box__list">
+          <li class="user-box__item">
+            <a class="user-box__link" href="#">
+              <svg class="user-box__icon" style="width: 19px; height: 17px;">
+                <use xlink:href="img/icons/sprite.svg#icon-heart"></use>
+              </svg>
+              <span class="user-box__num">0</span>
+            </a>
+          </li>
+          <li class="user-box__item">
+            <a class="user-box__link" href="#">
+              <svg class="user-box__icon" style="width: 19px; height: 17px;">
+                <use xlink:href="img/icons/sprite.svg#icon-cart"></use>
+              </svg>
+              <span class="user-box__num">0</span>
+            </a>
+          </li>
+        </ul>
+        <button class="user-box__burger" type="button">
+          <svg class="user-box__icon-burger" style="width: 21px; height: 21px;">
+            <use xlink:href="img/icons/sprite.svg#icon-burger"></use>
+          </svg>
+        </button>
+      </div>
+    </nav>
+  </div>
+</header>
+  <main class="main">
+
+    <section class="top">
+      <div class="container">
+        <h2 class="top__title">Log in</h2>
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs__item">
+            <a class="link breadcrumbs__link" href="index.html">Home</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="link breadcrumbs__link" href="login.html">Log in</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="modal">
+  <div class="container">
+    <div class="wrapper modal__wrapper">
+      <form class="modal__form" action="#">
+        <label class="modal__label">
+          Username or email address*
+          <input class="modal__input" required>
+        </label>
+        <label class="modal__label">
+          Password*
+          <input id="password-input" class="modal__input" type="password" required>
+        </label>
+        <button class="btn-bg modal__btn" type="submit">Login</button>
+        <div class="modal__check">
+          <label class="modal__label">
+            <input type="checkbox">
+            Remember me
+          </label>
+          <a class="modal__link-pas" href="#">Lost your password?</a>
+        </div>
+      </form>
+      <p class="modal__text">Not registered? No problem</p>
+      <a class="btn-light modal__ref" href="#">Create an account</a>
+    </div>
+  </div>
+</section>
+    
+  </main>
+  <footer class="footer">
+  <div class="footer__top">
+    <div class="container">
+      <ul class="wrapper footer__brands">
+        <li class="footer__brand">
+          <img class="footer__brand-logo" src="img/content/brands/brand-1.png" alt="brand logo">
+        </li>
+        <li class="footer__brand">
+          <img class="footer__brand-logo" src="img/content/brands/brand-2.png" alt="brand logo">
+        </li>
+        <li class="footer__brand">
+          <img class="footer__brand-logo" src="img/content/brands/brand-3.png" alt="brand logo">
+        </li>
+        <li class="footer__brand">
+          <img class="footer__brand-logo" src="img/content/brands/brand-4.png" alt="brand logo">
+        </li>
+        <li class="footer__brand">
+          <img class="footer__brand-logo" src="img/content/brands/brand-5.png" alt="brand logo">
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <div class="container">
+      <div class="wrapper footer__wrapper">
+        <div class="footer__nav">
+          <address class="footer__address">
+            <a class="logo footer__logo" href="index.html">
+              <img class="logo__img" src="img/logo/logo.svg" alt="logo">Glee.
+            </a>
+            <ul class="footer__address-list">
+              <li class="footer__address-item">
+                <a class="link footer__address-link" target="_blank" href="https://goo.gl/maps/HKKCY3L8o5sCeHWx5">
+                  <span class="footer__address-span">address</span>: 4772 Wines Lane Houston, TX 77032
+                </a>
+              </li>
+              <li class="footer__address-item">
+                <a class="link footer__address-link" href="tel:+832-347-5843">
+                  <span class="footer__address-span">Telephone</span>: +832-347-5843
+                </a>
+              </li>
+              <li class="footer__address-item">
+                <a class="link footer__address-link" href="mailto:contact@glee.com">
+                  <span class="footer__address-span">Email</span>: contact@Glee.com
+                </a>
+              </li>
+            </ul>
+          </address>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <h3 class="footer__title">Services</h3>
+            </li>
+            <li class="footer__item">
+              <a class="link footer__link" href="about.html">About us</a>
+            </li>
+            <li class="footer__item">
+              <a class="link footer__link" href="#">Return Policy</a>
+            </li>
+            <li class="footer__item">
+              <a class="link footer__link" href="#">Our Blog</a>
+            </li>
+            <li class="footer__item">
+              <a class="link footer__link" href="#">Contact Us</a>
+            </li>
+            <li class="footer__item">
+              <a class="link footer__link" href="terms.html">Terms & Condition</a>
+            </li>
+          </ul>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <h3 class="footer__title">Account</h3>
+            </li>
+            <li class="footer__item">
+              <a class="link footer__link" href="#">Your Account</a>
+            </li>
+            <li class="footer__item">
+              <a class="link footer__link" href="#">Checkout</a>
+            </li>
+            <li class="footer__item">
+              <a class="link footer__link" href="login.html">Login</a>
+            </li>
+            <li class="footer__item">
+              <a class="link footer__link" href="#">Register</a>
+            </li>
+          </ul>
+          <div class="footer__blok-form">
+            <h3 class="footer__title">newsletter</h3>
+            <p class="footer__blok-text">
+              Subscribe by our newsletter and get
+              update protidin.
+            </p>
+            <form class="footer__form" action="#">
+              <div class="footer__form-inner">
+                <label class="sr-only footer__form-label" for="email">enter yor email
+                </label>
+                <input class="footer__form-input" type="email" placeholder="Email address" required>
+              </div>
+              <button class="btn-bg footer__form-btn" type="button">Subscribe</button>
+            </form>
+          </div>
+        </div>
+        <div class="footer__copy">
+          <p class="footer__copy-text">©2020 CopyRight Example. All rights reserved.</p>
+          <ul class="footer__menu">
+            <li class="footer__menu-item">
+              <a class="link footer__menu-link" href="index.html">Home</a>
+            </li>
+            <li class="footer__menu-item">
+              <a class="link footer__menu-link" href="about.html">About</a>
+            </li>
+            <li class="footer__menu-item">
+              <a class="link footer__menu-link" href="blog.html">Blog</a>
+            </li>
+            <li class="footer__menu-item">
+              <a class="link footer__menu-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

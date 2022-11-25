@@ -57,27 +57,28 @@ function scripts() {
 }
 
 function images() {
-  return src('src/img/**/*.*')
+  return src('src/img/**/**/*.*')
     .pipe(imagemin(
-      [
-        imagemin.gifsicle({
-          interlaced: true
-        }),
-        imagemin.mozjpeg({
-          quality: 75,
-          progressive: true
-        }),
-        imagemin.optipng({
-          optimizationLevel: 5
-        }),
-        imagemin.svgo({
-          plugins: [{
-            removeViewBox: true
-          }, {
-            cleanupIDs: false
-          }]
-        })
-      ]))
+      // [
+      //   imagemin.gifsicle({
+      //     interlaced: true
+      //   }),
+      //   imagemin.mozjpeg({
+      //     quality: 75,
+      //     progressive: true
+      //   }),
+      //   imagemin.optipng({
+      //     optimizationLevel: 5
+      //   }),
+      //   imagemin.svgo({
+      //     plugins: [{
+      //       removeViewBox: true
+      //     }, {
+      //       cleanupIDs: false
+      //     }]
+      //   })
+      // ]
+      ))
     .pipe(dest('dist/img'))
 }
 

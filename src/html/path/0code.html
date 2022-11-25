@@ -1,0 +1,81 @@
+.block /* Блок */
+.block__element /* Элемент */
+.block--modifier /* Модификатор для Блока*/
+.block__element--modifier /* Модификатор для Элемента */
+
+
+/блоки
+product-card
+section-products
+header
+footer
+button
+card
+
+/элементы-блоков
+card__title
+card__price
+card__description
+card__button -->
+
+/модификаторы блока/элемента
+card--sale
+cart__price--sale
+<div class="card card--sale">
+  <div class="card__price card__price--sale">12000 РУБ</div>
+</div>
+
+<div class="card">
+  <img class="card__img" src="img/apple-watch.jpg">
+  <h3 class="card__title">Apple Watch</h3>
+  <span class="card__price">12000 РУБ</span>
+  <a class="card__read-more" href="#">Подробнее</a>
+</div>
+
+/блок sale
+<div class="card card--sale">
+  <img class="card__img" src="img/apple-watch.jpg">
+  <h3 class="card__title">Apple Watch</h3>
+  <span class="card__price card-price--sale">12000 РУБ</span>
+  <a class="card__read-more" href="#">Подробнее</a>
+</div>
+
+/вложенность
+<div class="card">
+  ...
+  <div class="card__details">
+    <div class="card__price">12000 РУБ</div>
+    <a class="card__reade-more" href="#">Подробнее</a>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section__header">
+    <div class="header">Заголовок</div>
+  </div>
+  <div class="section__cards">
+    <div class="card">...</div>
+    <div class="card">...</div>
+    <div class="card">...</div>
+  </div>
+  <div class="section__pagination">
+    <div class="pagination">
+      <a class="pagination__item">1</a>
+      <a class="pagination__item">2</a>
+      <a class="pagination__item">3</a>
+    </div>
+  </div>
+</div>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon.ico">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>@title</title>
+</head>
