@@ -7,18 +7,19 @@
   <main class="main">
     <section class="top">
       <div class="container">
-        <h2 class="top__title"></h2>
+        <h2 class="top__title">About Us</h2>
         <ul class="breadcrumbs">
           <li class="breadcrumbs__item">
             <a class="link breadcrumbs__link" href="index.html">Home</a>
           </li>
           <li class="breadcrumbs__item">
-            <a class="link breadcrumbs__link" href="#"></a>
+            <a class="link breadcrumbs__link" href="about.html">About Us</a>
           </li>
         </ul>
       </div>
     </section>
-
+    @include('path/statistic.html') 
+    @include('path/team.html')
     @include('path/insights.html')
   </main>
   @include('path/footer.html')

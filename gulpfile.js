@@ -6,17 +6,20 @@ const {
   series
 } = require('gulp');
 
-const scss = require('gulp-sass')(require('sass'));
+const sass = require('gulp-sass')(require('sass'));
 const concat = require('gulp-concat');
 const autoprefixer = require('gulp-autoprefixer');
-const groupCssMediaQueries = require("gulp-group-css-media-queries");
 const uglify = require('gulp-uglify');
-const imagemin = require('gulp-imagemin-changba');
+const imagemin = require('gulp-imagemin');
 const del = require('del');
 const pug = require('gulp-pug');
 const browserSync = require('browser-sync').create();
 const fileInclude = require('gulp-file-include');
 const replace = require('gulp-replace');
+const size = require('gulp-size');
+const webp = require('gulp-webp');
+// const webpHTML = require('gulp-webp-html');
+const groupCssMediaQueries = require("gulp-group-css-media-queries");//для сжатого файла закоментировать
 
 function browsersync() {
   browserSync.init({
@@ -29,8 +32,7 @@ function browsersync() {
 
 function styles() {
   return src('src/scss/style.scss')
-    .pipe(scss({ outputStyle: 'compressed' }))
-    // .pipe(scss.sync({ outputStyle: 'compressed' }).on('error', scss.logError))
+    .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
     .pipe(concat('style.min.css'))
     .pipe(autoprefixer({
       overrideBrowserslist: ['last 10 versions'],
@@ -57,29 +59,32 @@ function scripts() {
 }
 
 function images() {
-  return src('src/img/**/**/*.*')
+  return src('src/img/**/*.*')
+    .pipe(webp())
     .pipe(imagemin(
-      // [
-      //   imagemin.gifsicle({
-      //     interlaced: true
-      //   }),
-      //   imagemin.mozjpeg({
-      //     quality: 75,
-      //     progressive: true
-      //   }),
-      //   imagemin.optipng({
-      //     optimizationLevel: 5
-      //   }),
-      //   imagemin.svgo({
-      //     plugins: [{
-      //       removeViewBox: true
-      //     }, {
-      //       cleanupIDs: false
-      //     }]
-      //   })
-      // ]
-      ))
-    .pipe(dest('dist/img'))
+      [
+        imagemin.gifsicle({
+          interlaced: true
+        }),
+        imagemin.mozjpeg({
+          quality: 75,
+          progressive: true
+        }),
+        imagemin.optipng({
+          optimizationLevel: 5
+        }),
+        imagemin.svgo({
+          plugins: [{
+            removeViewBox: true
+          }, {
+            cleanupIDs: false
+          }]
+        })
+      ]
+    ))
+    .pipe(size({ title: 'IMG' }))
+    .pipe(src('src/img'))
+    .pipe(dest('public/img'))
 }
 
 function pugs() {
@@ -91,42 +96,41 @@ function pugs() {
 }
 
 const htmlInclude = () => {
-  return src(['src/html/*.html']) // Находит любой .html файл в папке "html", куда будем подключать другие .html файлы	
+  return src(['src/html/*.html'])
     .pipe(fileInclude({
       prefix: '@',
       basepath: '@file',
     }))
-    .pipe(dest('src')) // указываем, в какую папку поместить готовый файл html
+    // .pipe(webpHTML())
+    .pipe(dest('src'))
     .pipe(browserSync.stream());
 }
 
 function build() {
   return src([
-    // 'src/**/*.html',
     'src/*.html',
-    // 'src/**/*.min.html',
     'src/*.min.html',
+    'src/img/**/*.*',
     'src/css/style.min.css',
-    'src/fonts/*.woff',
-    'src/fonts/*.woff2',
+    'src/font/*.woff',
+    'src/font/*.woff2',
     'src/js/main.min.js'
-
   ], {
     base: 'src'
   })
-    .pipe(dest('dist'))
+    .pipe(dest('public'))
 }
 
 function cleanDist() {
-  return del('dist')
+  return del('public')
 }
 
 function watching() {
-  watch(['src/scss/**/*.scss'], styles);
   watch(['src/**/*.pug'], pugs);
   watch(['src/js/**/*.js', '!src/js/main.min.js'], scripts);
-  watch(['src/*.html']).on('change', browserSync.reload);
+  watch(['src/scss/**/*.scss'], styles);
   watch(['src/html/**/*.html'], htmlInclude);
+  watch(['src/*.html']).on('change', browserSync.reload);
 }
 
 
@@ -138,6 +142,6 @@ exports.images = images;
 exports.cleanDist = cleanDist;
 exports.htmlInclude = htmlInclude;
 exports.pugs = pugs;
-// exports.build = build;
+
 exports.build = series(cleanDist, images, build); //gulp build
 exports.default = parallel(pugs, htmlInclude, styles, scripts, browsersync, watching) //gulp

@@ -2,6 +2,7 @@
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
 }
+
 %rubik-400 {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
@@ -11,11 +12,21 @@
   font-family: 'Rubik', sans-serif;
   font-weight: 500;
 }
+%rubik-700 {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+}
+
+%dms-600 {
+  font-family: "DMSans", sans-serif;
+  font-weight: 600;
+}
 
 %dms-700 {
   font-family: "DMSans", sans-serif;
   font-weight: 700;
 }
+
 %poppins-700 {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
@@ -35,9 +46,4 @@
 // %myriad-400 {
 //   font-family: "Myriad Pro", sans-serif;
 //   font-weight: 400;
-// }
-
-// %poppins-700 {
-//   font-family: "Poppins", sans-serif;
-//   font-weight: 700;
 // }

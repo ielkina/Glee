@@ -1,15 +1,21 @@
-// .hero {}
+.hero {}
 
 .hero-slider {
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover;
+
+  &__list {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    max-width: 1170px;
+    margin: 0 auto;
+  }
 
   &__item {
-    background-size: 60%;
+    background-size: 59%;
     background-repeat: no-repeat;
     background-position: right center;
-    padding: 225px 0 281px 0;
+    position: relative;
   }
 
   &__title {
@@ -34,6 +40,7 @@
     display: inline-flex;
     align-items: center;
     padding: 20px 25px;
+    margin-bottom: 2px;
 
     &:hover {
       background-color: $container-bg;
@@ -52,8 +59,10 @@
   .slick-dots {
     display: flex;
     justify-content: center;
-    padding-bottom: 45px;
-
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
     & li:not(:last-child) {
       margin-right: 11px;
     }

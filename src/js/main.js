@@ -2,7 +2,7 @@
 
 $(function () {
 
-  $('.hero-slider').slick({
+  $('.hero-slider__list').slick({
     dots: true,
     arrows: false,
     autoplay: true,

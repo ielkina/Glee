@@ -79,3 +79,20 @@ cart__price--sale
   <link rel="stylesheet" href="css/style.min.css">
   <title>@title</title>
 </head>
+
+
+<picture>
+  <source srcset="
+                ./images/img@m1x.jpg 1x,
+                ./images/img@m2x.jpg 2x
+              " media="(min-width: 480px)"/>
+  <source srcset="
+                ./images/img@t1x.jpg 1x,
+                ./images/img@t2x.jpg 2x
+              " media="(min-width: 768px)"/>
+  <source srcset="
+                ./images/img@d1x.jpg 1x,
+                ./images/img@d2x.jpg 2x
+              " media="(min-width: 1200px)"/>
+  <img class="" src="./images/img@m1x.jpg" alt=""/>
+</picture>

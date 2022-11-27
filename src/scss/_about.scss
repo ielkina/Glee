@@ -1,0 +1,252 @@
+.statistic {
+  padding-top: 120px;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    // background-image: url(../img/decor/about-photo.jpg);
+    // background-repeat: no-repeat;
+    // background-position: left center;
+    // background-origin: content-box;
+    margin-bottom: 120px;
+  }
+
+  &__img {}
+
+  &__content {
+    padding-top: 84px;
+    max-width: 549px;
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 54px;
+  }
+
+  &__years {
+    @extend %rubik-700;
+    font-size: 140px;
+    line-height: 0.23;
+    color: $text-price;
+    margin-right: 29px;
+  }
+
+  &__service {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__span {}
+
+  &__title {
+    text-align: left;
+    margin-bottom: 51px;
+  }
+
+  &__text {
+    margin-bottom: 64px;
+  }
+
+  &__counts {
+    padding-top: 29px;
+    border-top: 1px solid #243f4d15;
+    display: flex;
+    align-items: center;
+  }
+
+  &__count {
+    width: calc(100%/3);
+    display: inherit;
+    flex-direction: column;
+    padding-left: 70px;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: '';
+      background-repeat: no-repeat;
+      width: 43px;
+      height: 42px;
+      top: 0;
+      left: 17px;
+    }
+
+    &:not(:last-child) {
+      border-inline-end: solid 2px #243f4d15;
+    }
+  }
+
+  &__count--projects {
+    &::before {
+      background-image: url(../img/icons/icon-project.svg);
+    }
+  }
+
+  &__count--revenue {
+    &::before {
+      background-image: url(../img/icons/icon-spiker.svg);
+    }
+  }
+
+  &__count--awards {
+    &::before {
+      background-image: url(../img/icons/icon-medal.svg);
+    }
+  }
+
+  &__count-num {
+    @extend %dms-700;
+    line-height: 1.1;
+    font-size: 36px;
+  }
+
+  &__count-name {
+    @extend %dms-700;
+    font-size: 16px;
+    line-height: 1.06;
+  }
+
+  &__bottom {
+    background-color: $box-bg;
+  }
+
+  &__detail {}
+
+  &__list {
+    padding-top: 88px;
+    display: flex;
+    padding-bottom: 84px;
+  }
+
+  &__item {
+    width: calc(100%/4);
+    display: inherit;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__icon {
+    flex-grow: 1;
+    margin-bottom: 26px;
+  }
+
+  &__regist {
+    @extend %dms-700;
+    font-size: 36px;
+    line-height: 0.89;
+    margin-bottom: 27px;
+  }
+
+  &__regist-text {
+    @extend %dms-700;
+    line-height: 1.78;
+  }
+}
+
+.team {
+  padding-top: 120px;
+  padding-bottom: 63px;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__info {
+    max-width: 294px;
+  }
+
+  &__title {
+    text-align: left;
+    margin-bottom: 38px;
+  }
+
+  &__text {
+    margin-bottom: 41px;
+  }
+
+  &__btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    padding: 16px 18px;
+    &:hover {
+      .team__btn-icon {
+        fill: $btn-bg;
+      }
+    }
+  }
+
+  &__btn-icon {
+    fill: $bg;
+    margin-left: 19px;
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+.stafs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 93px;
+
+  &__item {
+    position: relative;
+  }
+
+  &__photo {
+    object-fit: cover;
+  }
+
+  &__person {
+    width: 325px;
+    height: 111px;
+    box-shadow: 0px 6px 57px 0 #2525250d;
+    background-color: $bg;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: -63px;
+  }
+
+  &__info {}
+
+  &__name {}
+
+  &__prof {}
+}
+
+.social {
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 7px;
+    }
+  }
+
+  &__link {
+    width: 41px;
+    height: 41px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f6f6f6;
+    box-shadow: 0px 0px 0px 2px #f6f6f6;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      box-shadow: 0px 0px 0px 2px $btn-bg;
+      background-color: transparent;
+    }
+  }
+
+  &__icon {}
+}
